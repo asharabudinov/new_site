@@ -131,31 +131,31 @@ $(document).ready(function() {
         location.href = "lazernaya-epilyasia.html";
     });
     $('.slide-2').click(function () {
-        location.href = "lechenie-akne.html";
+        location.href = "unused/lechenie-akne.html";
     });
     $('.slide-3').click(function () {
-        location.href = "lechenie-rezecea.html";
+        location.href = "unused/lechenie-rezecea.html";
     });
     $('.slide-4').click(function () {
         location.href = "permanentnyi-makiyag.html";
     });
     $('.slide-5').click(function () {
-        location.href = "fotoomologenie.html";
+        location.href = "unused/fotoomologenie.html";
     });
     $('.slide-6').click(function () {
-        location.href = "ydalenie-pigmentnyh.html";
+        location.href = "unused/ydalenie-pigmentnyh.html";
     });
     $('.slide-7').click(function () {
-        location.href = "ydalenie-cocydictoy-cetki.html";
+        location.href = "unused/ydalenie-cocydictoy-cetki.html";
     });
     $('.slide-8').click(function () {
-        location.href = "ydalenie-taty-i-tatyaga.html";
+        location.href = "unused/ydalenie-taty-i-tatyaga.html";
     });
     $('.slide-9').click(function () {
-        location.href = "ELOS-epilyasia-pyshkovih-volos.html";
+        location.href = "unused/ELOS-epilyasia-pyshkovih-volos.html";
     });
     $('.slide-10').click(function () {
-        location.href = "RF-lifting.html";
+        location.href = "unused/RF-lifting.html";
     });
     /*============================================================================================================
      ============================================================|Slider technology|===============================
