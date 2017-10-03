@@ -2,6 +2,16 @@ $(document).ready(function() {
     /*===========================================================================================================
      ===========================================================|Menu|===========================================
      ==========================================================================================================*/
+	 
+	 $('.slider-services-mob').slick({
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        centerMode: true,
+        variableWidth: true
+    });
+	 
+	 
     $('.btn-nav').click(function () {
         $('.nav-menu').css({'left':'0', 'z-index':'10000'});
         $('.block-menu').css({'z-index':'9999', 'opacity':'1'});
@@ -85,34 +95,20 @@ $(document).ready(function() {
     /*===========================================================================================================
      ===========================================================|Slider services|=================================
      ===========================================================================================================*/
-    $('.slider-services').slick({
-        infinite: true,
-        slidesToShow: 6,
-        slidesToScroll: 1
-    });
     $('.slick-slide.slick-active a div').css({'display':'block','color':'#fff'});
     $('.slick-active:first a div').css({'display':'none'});
     $('.slick-active:last a div').css({'display':'none'});
-    $('.slick-next').click(function () {
+	
+	function showHideSlideDiv() {
+		$('.slick-slide a div').css({'display':'none'});
         $('.slick-slide.slick-active a div').css({'display':'block','color':'#fff'});
-        $('.slick-active:first a div').css({'display':'none'});
-        $('.slick-active:last a div').css({'display':'none'});
-    });
-    $('.slick-prev').click(function () {
-        $('.slick-slide.slick-active a div').css({'display':'block','color':'#fff'});
-        $('.slick-active:first a div').css({'display':'none'});
-        $('.slick-active:last a div').css({'display':'none'});
-    });
+	}
+	showHideSlideDiv();
+    $('.slick-next').click(showHideSlideDiv);
+    $('.slick-prev').click(showHideSlideDiv);
     /*============================================================================================================
      ===========================================================|Slider services mob|=============================
      ===========================================================================================================*/
-    $('.slider-services-mob').slick({
-        infinite: true,
-        speed: 300,
-        slidesToShow: 1,
-        centerMode: true,
-        variableWidth: true
-    });
     $('.slider-doc-mob').slick({
         infinite: true,
         speed: 300,
@@ -131,31 +127,31 @@ $(document).ready(function() {
         location.href = "lazernaya-epilyasia.html";
     });
     $('.slide-2').click(function () {
-        location.href = "unused/lechenie-akne.html";
+        location.href = "lechenie-akne.html";
     });
     $('.slide-3').click(function () {
-        location.href = "unused/lechenie-rezecea.html";
+        location.href = "lechenie-rezecea.html";
     });
     $('.slide-4').click(function () {
         location.href = "permanentnyi-makiyag.html";
     });
     $('.slide-5').click(function () {
-        location.href = "unused/fotoomologenie.html";
+        location.href = "fotoomologenie.html";
     });
     $('.slide-6').click(function () {
-        location.href = "unused/ydalenie-pigmentnyh.html";
+        location.href = "ydalenie-pigmentnyh.html";
     });
     $('.slide-7').click(function () {
-        location.href = "unused/ydalenie-cocydictoy-cetki.html";
+        location.href = "ydalenie-cocydictoy-cetki.html";
     });
     $('.slide-8').click(function () {
-        location.href = "unused/ydalenie-taty-i-tatyaga.html";
+        location.href = "ydalenie-taty-i-tatyaga.html";
     });
     $('.slide-9').click(function () {
-        location.href = "unused/ELOS-epilyasia-pyshkovih-volos.html";
+        location.href = "ELOS-epilyasia-pyshkovih-volos.html";
     });
     $('.slide-10').click(function () {
-        location.href = "unused/RF-lifting.html";
+        location.href = "RF-lifting.html";
     });
     /*============================================================================================================
      ============================================================|Slider technology|===============================
@@ -306,47 +302,54 @@ $(document).ready(function() {
 
         }
     });
-/*===========================================================================================================
-===========================================================|Slider robot|====================================
-===========================================================================================================*/
+	/*===========================================================================================================
+	===========================================================|Slider robot|====================================
+	===========================================================================================================*/
     $('.slider-works').slick();
+	
+	/*============================================================================================================
+	 ===========================================================|Slider studio|===================================
+	 ===========================================================================================================*/
+	var slideIndex = 1;
+	showSlides(slideIndex);
+
+	function plusSlides(n) {
+		showSlides(slideIndex += n);
+	}
+
+	function currentSlide(n) {
+		showSlides(slideIndex = n);
+	}
+
+	function showSlides(n) {
+		var i;
+		var slides =document.getElementsByClassName("my-Slides");
+		var dots = document.getElementsByClassName("dot");
+
+		if (n > slides.length)
+		{
+			slideIndex = 1
+		}
+
+		if (n < 1)
+		{
+			slideIndex = slides.length
+		}
+		for (i = 0; i < slides.length; i++)
+		{
+			slides[i].style.display = "none";
+		}
+		for ( i = 0; i < dots.length; i++)
+		{
+			dots[i].className = dots[i].className.replace(" active","");
+		}
+		slides[slideIndex-1].style.display = "block";
+		dots[slideIndex-1].className += " active";
+	}
+	
+	window.plusSlides = plusSlides;
+	window.currentSlide = currentSlide;
+	window.showSlides = showSlides;
+	
+
 });
-/*============================================================================================================
- ===========================================================|Slider studio|===================================
- ===========================================================================================================*/
-var slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-    showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-    showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-    var i;
-    var slides =document.getElementsByClassName("my-Slides");
-    var dots = document.getElementsByClassName("dot");
-
-    if (n > slides.length)
-    {
-        slideIndex = 1
-    }
-
-    if (n < 1)
-    {
-        slideIndex = slides.length
-    }
-    for (i = 0; i < slides.length; i++)
-    {
-        slides[i].style.display = "none";
-    }
-    for ( i = 0; i < dots.length; i++)
-    {
-        dots[i].className = dots[i].className.replace(" active","");
-    }
-    slides[slideIndex-1].style.display = "block";
-    dots[slideIndex-1].className += " active";
-}

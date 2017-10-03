@@ -556,4 +556,17 @@ div.active-cons {display:block}
     .logo {top:-30px}
     a.call-me.show-mob {right:10px; top:4px}
     .footer iframe {height:300px}
+
+}
+
+.slide-show-mob-sal .slick-slide {height:auto !important}
+.slider-review .slick-slide {height:auto !important}
+
+.slider-services {display:table; width:100%}
+.slider-services span {display:inline-block; width:45% !important; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+.slider-services span:hover {width:52% !important;}
+
+@media (min-width:1000px) {
+	.slider-services span {width:30% !important;}
+	.slider-services span:hover {width:35% !important;}
 }
