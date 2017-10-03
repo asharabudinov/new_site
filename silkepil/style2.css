@@ -570,3 +570,5 @@ div.active-cons {display:block}
 	.slider-services span {width:30% !important;}
 	.slider-services span:hover {width:35% !important;}
 }
+
+.form_box_error {border-color:#f00}

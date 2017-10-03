@@ -3068,6 +3068,7 @@
                 <h3 class="screen_title col-xs-12 col-md-8">Заказать разработку</h3>
                 <div class="col-xs-12"></div>
                 <p class="col-xs-12  col-md-6">Оставьте свои контактные данные, и наш менеджер перезвонит Вам.</p>
+				<div class="js_orderCallOldForm" style="display:none"></div>
                 <form action="https://silkepil.com.ua/item/edit" method="post" class="js_feedback-3 col-xs-12 js_orderCallForm">
                     <div class="col-xs-12 col-md-6">
                         <div class="form_box">
@@ -3078,15 +3079,9 @@
                             <span class="fa fa-phone"></span>
                             <input id="contact_phone-2" type="tel" name="phone" class="js_phone-2" placeholder="Мобильный телефон">
                         </div>
-                        <button type="submit" class="link-popup js_orderCallBtn">Забронировать</button>
+                        <button type="submit" class="link-popup">Забронировать</button>
                     </div>
                     <div class="col-xs-12 col-md-6"></div>
-                    <input type="hidden" name="title" value="" class="js_input_title"/>
-                    <input type="hidden" name="source" class="source" value="<?php echo isset($_GET['utm_source']) ? $_GET['utm_source'] : '' ;?>" />
-                    <input type="hidden" name="medium" class="medium" value="<?php echo isset($_GET['utm_medium']) ? $_GET['utm_medium'] : '' ;?>" />
-                    <input type="hidden" name="campaign" class="campaign" value="<?php echo isset($_GET['utm_campaign']) ? $_GET['utm_campaign'] : '' ;?>" />
-                    <input type="hidden" name="term" class="term" value="<?php echo isset($_GET['utm_term']) ? $_GET['utm_term'] : '' ;?>" />
-                    <input type="hidden" name="content" class="content" value="<?php echo isset($_GET['utm_content']) ? $_GET['utm_content'] : '' ;?>" />
                 </form>
             </div>
         </div>

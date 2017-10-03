@@ -196,26 +196,6 @@ $(document).ready(function() {
     });
     /*modal title*/
 
-    /*feedback_form*/
-    $(".js_feedback-3").submit(function(){
-        $(this).find("input").removeClass("error");
-        var error = false;
-        var name = $(".js_name-2").val();
-        var phone = $(".js_phone-2").val();
-        if(!name){
-            $(".js_name-2").addClass("error");
-            error = true;
-        }
-
-        if(!phone){
-            $(".js_phone-2").addClass("error");
-            error = true;
-        }
-        if(error)
-            return false;
-        else
-            $(this).submit();
-    });
     /*=============================================================================================================
      ===========================================================|Constructor|=======================================
      =============================================================================================================*/
@@ -351,5 +331,48 @@ $(document).ready(function() {
 	window.currentSlide = currentSlide;
 	window.showSlides = showSlides;
 	
+	window.initCallBackForm = function() {
+		var fieldNameName = '';
+		var fieldNamePhone = '';
+		var fieldNameTime = '';
+		$.ajax({
+			url: 'https://silkepil.com.ua/callback/add?sourceType=ajax',
+			method: "GET",
+			dataType: "html",
+			success: function(data) {
+				var $oldForm = $('.js_orderCallOldForm');
+				$oldForm.html(data);
+				fieldNameName = $oldForm.find('input:eq(0)').attr('name');
+				fieldNamePhone = $oldForm.find('input:eq(1)').attr('name');
+				fieldNameTime = $oldForm.find('select:first').attr('name');
+			}
+		});
+		var $form = $('.js_orderCallForm');
+		$form.submit(function() {
+			var postData = {};
+			postData[fieldNameName] = $('.js_orderCallForm').find('input[name=name]').val();
+			postData[fieldNamePhone] = $('.js_orderCallForm').find('input[name=phone]').val();
+			postData[fieldNameTime] = 'any';
+			$.ajax({
+				url: $form.attr('action'),
+				method: "POST",
+				data: postData,
+				dataType: "json",
+				success: function(data) {
+					if(data.error) {
+						$(".js_name-2").parents('.form_box').addClass("form_box_error");
+						$(".js_phone-2").parents('.form_box').addClass("form_box_error");
+						return false;
+					}
+					alert('Мы обязательно вам перезвоним!');
+					$('.js_modal_form-3 .modal_close').click();
+				}
+			});
+			return false;
+		});
+		
+	};
+	
+	window.initCallBackForm();
 
 });
