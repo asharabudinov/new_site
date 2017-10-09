@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i');
-@font-face {font-family:OSb; src:url(fonts/ProximaNova-Light.otf)}
+@font-face {font-family:OSb; src:url(../fonts/ProximaNova-Light.otf)}
 /*==========================================================================================================
 ===========================================================|Scroll bar|=====================================
 ==========================================================================================================*/
@@ -30,10 +30,10 @@ i {font-family:Roboto, sans-serif !important; font-weight:400; font-size:14px !i
 /*==========================================================================================================
 ===========================================================|Modal|==========================================
 ==========================================================================================================*/
-div.modal-dialog {min-width:770px; background-image:url(images/bg-modal.png); background-repeat:no-repeat; min-height:485px}
+div.modal-dialog {min-width:770px; background-image:url(bg-modal.png); background-repeat:no-repeat; min-height:485px}
 div.modal-dialog p {padding:0 0 10px 60px}
 div.modal-dialog .link-popup {margin:20px 0 0 30px}
-button.modal_close {width:30px; height:30px; position:absolute; right:30px; top:55px; background-color:transparent; border:none; background-image:url(images/close.png); background-position:center; z-index:10; background-repeat:no-repeat}
+button.modal_close {width:30px; height:30px; position:absolute; right:30px; top:55px; background-color:transparent; border:none; background-image:url(close.png); background-position:center; z-index:10; background-repeat:no-repeat}
 
 h3.screen_title {font-size:41px !important; color:#282828; padding:50px 0 10px 60px; text-align:left}
 
@@ -56,7 +56,7 @@ form.js_feedback div.col-md-6:nth-child(1) {text-align:right}
 /*==========================================================================================================
 ===========================================================|Header|=========================================
 ==========================================================================================================*/
-.header {height:620px; background-image:url("images/head-bg-2.jpg"); background-repeat:no-repeat; background-position:center; -moz-background-size:cover; -o-background-size:cover; background-size:cover; overflow:hidden}
+.header {height:620px; background-image:url("head-bg-2.jpg"); background-repeat:no-repeat; background-position:center; -moz-background-size:cover; -o-background-size:cover; background-size:cover; overflow:hidden}
 .header h1 {white-space:pre-line}
 .header .content-header {position:absolute; top:50%; margin-top:-130px}
 .header div.row>div {height:620px}
@@ -82,7 +82,7 @@ form.js_feedback div.col-md-6:nth-child(1) {text-align:right}
 .phone p {font-size:18px !important; text-align:right}
 .phone p span {padding:0 5px}
 .nav-menu li, .nav-menu li p, .nav-menu li span {font-size:18px !important}
-.close-nav {width:41px; height:27px; background-image:url("images/arrow-close.png"); background-position:center; -moz-background-size:cover; -o-background-size:cover; background-size:cover; background-repeat:no-repeat; background-color:transparent; border:none; position:absolute; right:60px; top:50px}
+.close-nav {width:41px; height:27px; background-image:url("arrow-close.png"); background-position:center; -moz-background-size:cover; -o-background-size:cover; background-size:cover; background-repeat:no-repeat; background-color:transparent; border:none; position:absolute; right:60px; top:50px}
 .nav-menu>ul {padding:30px 0 0 !important}
 .nav-menu li a> p {display:inline-block; margin:0 }
 .nav-menu li a> span {padding:0 10px}
@@ -126,28 +126,28 @@ span[class^='slide-']:hover a div {color:#282828 !important; background-color:#f
 span[class^='slide-']:hover {width:215px !important; height:300px; z-index:5; margin:4px -10px !important; -webkit-transition:.6s; -o-transition:.6s; -moz-transition:.6s; transition:.6s; cursor:pointer}
 span[class^='slide-']:before {content:""; width:100%; height:100%; position:absolute; z-index:-5; background-color:#282828; left:0; opacity:.5}
 span[class^='slide-']:hover:before {opacity:0}
-span.slide-1 {background-image:url("images/laz_epil.jpg")}
-span.slide-2 {background-image:url("images/akne.jpg")}
-span.slide-3 {background-image:url("images/rozecea.jpg")}
-span.slide-4 {background-image:url("images/permanent.jpg")}
-span.slide-5 {background-image:url("images/fotoomologenie.jpg")}
-span.slide-6 {background-image:url("images/udalenie_pigmentov.jpg")}
-span.slide-7 {background-image:url("images/udalenie_sosudov.jpg")}
-span.slide-8 {background-image:url("images/udalenie_tattoo.jpg")}
-span.slide-9 {background-image:url("images/elos.jpg")}
-span.slide-10 {background-image:url("images/rf.jpg")}
+span.slide-1 {background-image:url("laz_epil.jpg")}
+span.slide-2 {background-image:url("akne.jpg")}
+span.slide-3 {background-image:url("rozecea.jpg")}
+span.slide-4 {background-image:url("permanent.jpg")}
+span.slide-5 {background-image:url("fotoomologenie.jpg")}
+span.slide-6 {background-image:url("udalenie_pigmentov.jpg")}
+span.slide-7 {background-image:url("udalenie_sosudov.jpg")}
+span.slide-8 {background-image:url("udalenie_tattoo.jpg")}
+span.slide-9 {background-image:url("elos.jpg")}
+span.slide-10 {background-image:url("rf.jpg")}
 .slick-next, .slick-prev {position:absolute; top:50%; width:70px; height:20px; margin:-10px 0 0; z-index:5; background-color:transparent; background-repeat:no-repeat; -moz-background-size:cover; -o-background-size:cover; background-size:cover; background-position:center; border:none; color:transparent}
-.slick-prev {left:50px; background-image:url("images/arrow-prew.png")}
+.slick-prev {left:50px; background-image:url("arrow-prew.png")}
 .slick-prev:before {content:""; width:40px; height:40px; -webkit-border-radius:50%; -moz-border-radius:50%; border-radius:50%; background-color:transparent; border:2px solid #ffffff; position:absolute; margin-top:-12px; left:-10px; opacity:1}
 .slick-prev:hover:before {opacity:0; -webkit-transition:.2s; -o-transition:.2s; -moz-transition:.2s; transition:.2s}
-.slick-next {right:50px; background-image:url("images/arrow-next.png")}
+.slick-next {right:50px; background-image:url("arrow-next.png")}
 .slick-next:before {content:""; width:40px; height:40px; -webkit-border-radius:50%; -moz-border-radius:50%; border-radius:50%; background-color:transparent; border:2px solid #ffffff; position:absolute; margin-top:-12px; right:-10px; opacity:1}
 .slick-next:hover:before {opacity:0; -webkit-transition:.2s; -o-transition:.2s; -moz-transition:.2s; transition:.2s}
 .bg-sl {width:100%; height:270px; background-color:transparent; bottom:20px; position:absolute}
 /*==========================================================================================================
 ===========================================================|Wrapper-2|======================================
 ==========================================================================================================*/
-.wrapper-2 {min-height:590px; background-image:url("images/bg-wr.jpg"); -moz-background-size:cover; -o-background-size:cover; background-size:cover; background-position:center}
+.wrapper-2 {min-height:590px; background-image:url("bg-wr.jpg"); -moz-background-size:cover; -o-background-size:cover; background-size:cover; background-position:center}
 .wrapper-2 .col-md-7 {position:relative; top:100px}
 .wrapper-2 .col-md-7 h3 {padding:20px 0; text-align:left}
 .wrapper-2 .col-md-5 img {margin:0 0 -5px}
@@ -162,10 +162,10 @@ div.my-Slides {opacity:1}
 .slide-show-container {padding:50px 15px 0; position:relative; margin:auto}
 .slide-show-container img {width:100%; -webkit-box-shadow:0 20px 33px -17px rgba(0,0,0,0.75); -moz-box-shadow:0 20px 33px -17px rgba(0,0,0,0.75); box-shadow:0 20px 33px -17px rgba(0,0,0,0.75)}
 .prev, .next {position:absolute; bottom:-50px; width:70px; height:20px; z-index:5; background-color:transparent; background-repeat:no-repeat; -moz-background-size:cover; -o-background-size:cover; background-size:cover; background-position:center; border:none; color:transparent}
-.prev {left:50px; background-image:url("images/arrow-prew-w.png")}
+.prev {left:50px; background-image:url("arrow-prew-w.png")}
 .prev:before {content:""; width:40px; height:40px; -webkit-border-radius:50%; -moz-border-radius:50%; border-radius:50%; background-color:transparent; border:2px solid #282828; position:absolute; margin-top:-12px; left:-10px; opacity:1}
 .prev:hover:before {opacity:0; -webkit-transition:.2s; -o-transition:.2s; -moz-transition:.2s; transition:.2s}
-.next {right:50px; background-image:url("images/arrow-next-w.png")}
+.next {right:50px; background-image:url("arrow-next-w.png")}
 .next:before {content:""; width:40px; height:40px; -webkit-border-radius:50%; -moz-border-radius:50%; border-radius:50%; background-color:transparent; border:2px solid #282828; position:absolute; margin-top:-12px; right:-10px; opacity:1}
 .next:hover:before {opacity:0; -webkit-transition:.2s; -o-transition:.2s; -moz-transition:.2s; transition:.2s}
 .dot {cursor:pointer}
@@ -284,7 +284,7 @@ div.active-cons {display:block}
 /*==========================================================================================================
 ===========================================================|Wrapper-5|======================================
 ==========================================================================================================*/
-.wrapper-5 {min-height:640px; background-image:url("images/background-block.jpg"); background-position:right; background-repeat:no-repeat; -moz-background-size:cover; -o-background-size:cover; background-size:cover; padding:50px 0 0; color:#fff}
+.wrapper-5 {min-height:640px; background-image:url("background-block.jpg"); background-position:right; background-repeat:no-repeat; -moz-background-size:cover; -o-background-size:cover; background-size:cover; padding:50px 0 0; color:#fff}
 .wrapper-5 h3 span.wr-zag-b:after {content:""; position:absolute; width:45px; height:3px; right:-65px; border-bottom:1px dotted #fff; bottom:25px}
 .wrapper-5 p {color:#fff}
 .wrapper-5 h3 {text-align:left; line-height:1; padding:110px 0 20px}
@@ -294,10 +294,10 @@ div.active-cons {display:block}
 ==========================================================================================================*/
 .wrapper-6 {text-align:center}
 .wrapper-6 .slick-next, .slick-prev {position:absolute; top:50%; width:70px; height:20px; margin:-10px 0 0; z-index:5; background-color:transparent; background-repeat:no-repeat; -moz-background-size:cover; -o-background-size:cover; background-size:cover; background-position:center; border:none; color:transparent}
-.wrapper-6 .slick-prev {left:-80px; background-image:url("images/arrow-prew-w.png")}
+.wrapper-6 .slick-prev {left:-80px; background-image:url("arrow-prew-w.png")}
 .wrapper-6 .slick-prev:before {content:""; width:40px; height:40px; -webkit-border-radius:50%; -moz-border-radius:50%; border-radius:50%; background-color:transparent; border:2px solid #282828; position:absolute; margin-top:-12px; left:-10px; opacity:1}
 .wrapper-6 .slick-prev:hover:before {opacity:0; -webkit-transition:.2s; -o-transition:.2s; -moz-transition:.2s; transition:.2s}
-.wrapper-6 .slick-next {right:-60px; background-image:url("images/arrow-next-w.png")}
+.wrapper-6 .slick-next {right:-60px; background-image:url("arrow-next-w.png")}
 .wrapper-6 .slick-next:before {content:""; width:40px; height:40px; -webkit-border-radius:50%; -moz-border-radius:50%; border-radius:50%; background-color:transparent; border:2px solid #282828; position:absolute; margin-top:-12px; right:-10px; opacity:1}
 .wrapper-6 .slick-next:hover:before {opacity:0; -webkit-transition:.2s; -o-transition:.2s; -moz-transition:.2s; transition:.2s}
 .slide-sotrud img {display:block; margin:auto}
@@ -306,7 +306,7 @@ div.active-cons {display:block}
 /*==========================================================================================================
 ===========================================================|Wrapper-7|======================================
 ==========================================================================================================*/
-.wrapper-7 {min-height:440px; background-image:url("images/bg-wr-certificate.jpg"); background-position:center; -moz-background-size:cover; -o-background-size:cover; background-size:cover; background-repeat:no-repeat}
+.wrapper-7 {min-height:440px; background-image:url("bg-wr-certificate.jpg"); background-position:center; -moz-background-size:cover; -o-background-size:cover; background-size:cover; background-repeat:no-repeat}
 .wrapper-7 h3 {padding:20px 0}
 /*==========================================================================================================
 ===========================================================|Wrapper-8|======================================
@@ -314,17 +314,17 @@ div.active-cons {display:block}
 .wrapper-8 {min-height:800px; padding:20px 0 0}
 .wrapper-8 iframe {min-height:440px; margin-top:70px}
 .wrapper-8 .slick-next, .slick-prev {position:absolute; top:50%; width:70px; height:20px; margin:-10px 0 0; z-index:5; background-color:transparent; background-repeat:no-repeat; -moz-background-size:cover; -o-background-size:cover; background-size:cover; background-position:center; border:none; color:transparent}
-.wrapper-8 .slick-prev {left:-80px; background-image:url("images/arrow-prew-w.png")}
+.wrapper-8 .slick-prev {left:-80px; background-image:url("arrow-prew-w.png")}
 .wrapper-8 .slick-prev:before {content:""; width:40px; height:40px; -webkit-border-radius:50%; -moz-border-radius:50%; border-radius:50%; background-color:transparent; border:2px solid #282828; position:absolute; margin-top:-12px; left:-10px; opacity:1}
 .wrapper-8 .slick-prev:hover:before {opacity:0; -webkit-transition:.2s; -o-transition:.2s; -moz-transition:.2s; transition:.2s}
-.wrapper-8 .slick-next {right:-80px; background-image:url("images/arrow-next-w.png")}
+.wrapper-8 .slick-next {right:-80px; background-image:url("arrow-next-w.png")}
 .wrapper-8 .slick-next:before {content:""; width:40px; height:40px; -webkit-border-radius:50%; -moz-border-radius:50%; border-radius:50%; background-color:transparent; border:2px solid #282828; position:absolute; margin-top:-12px; right:-10px; opacity:1}
 .wrapper-8 .slick-next:hover:before {opacity:0; -webkit-transition:.2s; -o-transition:.2s; -moz-transition:.2s; transition:.2s}
 .slider-review {display:block; margin:auto; min-height:585px}
 /*==========================================================================================================
 ===========================================================|Wrapper-9|======================================
 ==========================================================================================================*/
-.wrapper-9 {background-image:url("images/bg-wr-question.jpg"); background-repeat:no-repeat; -moz-background-size:cover; -o-background-size:cover; background-size:cover; background-position:center; padding:20px 0 20px}
+.wrapper-9 {background-image:url("bg-wr-question.jpg"); background-repeat:no-repeat; -moz-background-size:cover; -o-background-size:cover; background-size:cover; background-position:center; padding:20px 0 20px}
 .wrapper-9 hr {border-top:1px dotted #282828; padding:0; height:1px; margin:0}
 .ackordeon_body article {padding:10px 30px 10px 50px}
 .ackordeon_body>h4 {padding:20px 0; font-family:Roboto, sans-serif !important; font-weight:700 !important}
@@ -355,23 +355,23 @@ div.active-cons {display:block}
 .slider-works p {text-align:center; padding:40px 0 !important}
 .wrapper-5-u .slick-next, .wrapper-5-u  .slick-prev {position:absolute; top:90%; width:70px; height:20px; margin:-10px 0 0; z-index:5; background-color:transparent; background-repeat:no-repeat; -moz-background-size:cover; -o-background-size:cover; background-size:cover; background-position:center; border:none; color:transparent}
 .slider-works img {-webkit-box-shadow:-24px 54px 39px -56px rgba(0,0,0,0.75); -moz-box-shadow:-24px 54px 39px -56px rgba(0,0,0,0.75); box-shadow:-24px 54px 39px -56px rgba(0,0,0,0.75)}
-.wrapper-5-u .slick-prev {left:20%; background-image:url("images/arrow-prew-w.png")}
+.wrapper-5-u .slick-prev {left:20%; background-image:url("arrow-prew-w.png")}
 .wrapper-5-u .slick-prev:before {content:""; width:40px; height:40px; -webkit-border-radius:50%; -moz-border-radius:50%; border-radius:50%; background-color:transparent; border:2px solid #282828; position:absolute; margin-top:-12px; left:-10px; opacity:1}
 .wrapper-5-u .slick-prev:hover:before {opacity:0; -webkit-transition:.2s; -o-transition:.2s; -moz-transition:.2s; transition:.2s}
-.wrapper-5-u .slick-next {right:20%; background-image:url("images/arrow-next-w.png")}
+.wrapper-5-u .slick-next {right:20%; background-image:url("arrow-next-w.png")}
 .wrapper-5-u .slick-next:before {content:""; width:40px; height:40px; -webkit-border-radius:50%; -moz-border-radius:50%; border-radius:50%; background-color:transparent; border:2px solid #282828; position:absolute; margin-top:-12px; right:-10px; opacity:1}
 .wrapper-5-u .slick-next:hover:before {opacity:0; -webkit-transition:.2s; -o-transition:.2s; -moz-transition:.2s; transition:.2s}
 .uslugi .header h3 {text-transform:uppercase}
-.uslugi.usl-1 .header {background-image:url("images/head-usl-1.jpg")}
-.uslugi.usl-2 .header {background-image:url("images/head-usl-2.jpg")}
-.uslugi.usl-3 .header {background-image:url("images/head-usl-3.jpg")}
-.uslugi.usl-4 .header {background-image:url("images/head-usl-4.jpg")}
-.uslugi.usl-5 .header {background-image:url("images/head-usl-5.jpg")}
-.uslugi.usl-6 .header {background-image:url("images/head-usl-6.jpg")}
-.uslugi.usl-7 .header {background-image:url("images/head-usl-7.jpg")}
-.uslugi.usl-8 .header {background-image:url("images/head-usl-8.jpg")}
-.uslugi.usl-9 .header {background-image:url("images/head-usl-9.jpg")}
-.uslugi.usl-10 .header {background-image:url("images/head-usl-10.jpg")}
+.uslugi.usl-1 .header {background-image:url("head-usl-1.jpg")}
+.uslugi.usl-2 .header {background-image:url("head-usl-2.jpg")}
+.uslugi.usl-3 .header {background-image:url("head-usl-3.jpg")}
+.uslugi.usl-4 .header {background-image:url("head-usl-4.jpg")}
+.uslugi.usl-5 .header {background-image:url("head-usl-5.jpg")}
+.uslugi.usl-6 .header {background-image:url("head-usl-6.jpg")}
+.uslugi.usl-7 .header {background-image:url("head-usl-7.jpg")}
+.uslugi.usl-8 .header {background-image:url("head-usl-8.jpg")}
+.uslugi.usl-9 .header {background-image:url("head-usl-9.jpg")}
+.uslugi.usl-10 .header {background-image:url("head-usl-10.jpg")}
 .uslugi .header h3 {text-align:left}
 /*==========================================================================================================
 ===========================================================|wrapper-1-u|====================================
@@ -381,7 +381,7 @@ div.active-cons {display:block}
 /*==========================================================================================================
 ===========================================================|wrapper-2-u|====================================
 ==========================================================================================================*/
-.wrapper-2-u {background-image:url("images/dosci-bg.jpg"); -moz-background-size:cover; -o-background-size:cover; background-size:cover; background-position:center; background-repeat:no-repeat; background-attachment:fixed; padding:80px 0}
+.wrapper-2-u {background-image:url("dosci-bg.jpg"); -moz-background-size:cover; -o-background-size:cover; background-size:cover; background-position:center; background-repeat:no-repeat; background-attachment:fixed; padding:80px 0}
 .wrapper-2-u h3 {color:#fff; text-align:left; margin-left:-15px !important; padding:120px 0 10px 0 !important}
 .wrapper-2-u li {color:#fff}
 .wrapper-2-u h3 span.wr-zag-b:after {content:""; position:absolute; width:45px; height:3px; right:-65px; border-bottom:1px dotted #fff; bottom:25px}
@@ -393,7 +393,7 @@ div.active-cons {display:block}
 /*==========================================================================================================
 ===========================================================|wrapper-4-u|====================================
 ==========================================================================================================*/
-.wrapper-4-u {padding:80px 0; background-image:url("images/bok-bg.jpg"); -moz-background-size:cover; -o-background-size:cover; background-size:cover; background-position:center; background-repeat:no-repeat; background-attachment:fixed}
+.wrapper-4-u {padding:80px 0; background-image:url("bok-bg.jpg"); -moz-background-size:cover; -o-background-size:cover; background-size:cover; background-position:center; background-repeat:no-repeat; background-attachment:fixed}
 .wrapper-4-u h3 {padding:120px 0 10px 0 !important; text-align:left; margin-left:-15px !important}
 .wrapper-4-u li {color:#fff}
 .wrapper-4-u h3 span.wr-zag-b:after {content:""; position:absolute; width:45px; height:3px; right:-65px; border-bottom:1px dotted #fff; bottom:25px}
@@ -406,7 +406,7 @@ div.active-cons {display:block}
 /*==========================================================================================================
 ===========================================================|media|==========================================
 ==========================================================================================================*/
-.wrapper-thanks {max-width:1950px; background-repeat:no-repeat; background-size:cover; background-image:url('images/bg-thanks.jpg');background-position:center; height:100vh}
+.wrapper-thanks {max-width:1950px; background-repeat:no-repeat; background-size:cover; background-image:url('bg-thanks.jpg');background-position:center; height:100vh}
 .thanks-box {border:3px solid #fdb02a; background-color:#fff; padding: 50px; position:absolute; top:50%; min-height:300px; width:50%; margin:-150px 0 0 15%}
 
 @media (max-width:1180px) {
@@ -436,11 +436,11 @@ div.active-cons {display:block}
     .wrapper-1 {padding:0 0 60px}
     .wrapper-1 .slick-next, .wrapper-1  .slick-prev, .wrapper-3 .slick-next, .wrapper-3  .slick-prev {position:absolute; top:100%; width:70px; height:20px; margin:-10px 0 0; z-index:5; background-color:transparent; background-repeat:no-repeat; -moz-background-size:cover; -o-background-size:cover; background-size:cover; background-position:center; border:none; color:transparent}
     .wrapper-3 .slick-next, .wrapper-3  .slick-prev {margin:28px 0 0}
-    .wrapper-1 .slick-prev, .wrapper-3 .slick-prev {left:10px; background-image:url("images/arrow-prew-w.png")}
+    .wrapper-1 .slick-prev, .wrapper-3 .slick-prev {left:10px; background-image:url("arrow-prew-w.png")}
     .wrapper-3 .slick-prev {left:25px}
     .wrapper-1 .slick-prev:before, .wrapper-3 .slick-prev:before {content:""; width:40px; height:40px; -webkit-border-radius:50%; -moz-border-radius:50%; border-radius:50%; background-color:transparent; border:2px solid #282828; position:absolute; margin-top:-12px; left:-10px; opacity:1}
     .wrapper-1 .slick-prev:hover:before, .wrapper-3 .slick-prev:hover:before {opacity:0; -webkit-transition:.2s; -o-transition:.2s; -moz-transition:.2s; transition:.2s}
-    .wrapper-1 .slick-next, .wrapper-3 .slick-next {right:10px; background-image:url("images/arrow-next-w.png")}
+    .wrapper-1 .slick-next, .wrapper-3 .slick-next {right:10px; background-image:url("arrow-next-w.png")}
     .wrapper-3 .slick-next {right:25px}
     .wrapper-1 .slick-next:before, .wrapper-3 .slick-next:before {content:""; width:40px; height:40px; -webkit-border-radius:50%; -moz-border-radius:50%; border-radius:50%; background-color:transparent; border:2px solid #282828; position:absolute; margin-top:-12px; right:-10px; opacity:1}
     .wrapper-1 .slick-next:hover:before, .wrapper-3 .slick-next:hover:before {opacity:1; -webkit-transition:.2s; -o-transition:.2s; -moz-transition:.2s; transition:.2s}
@@ -458,17 +458,17 @@ div.active-cons {display:block}
     .wrapper-6 .link-popup {margin:20px 0 20px}
     .sertificat-slide img {margin:0 7.5px 0}
     .wrapper-7 .slick-next, .wrapper-7  .slick-prev {position:absolute; top:120%; width:70px; height:20px; margin:-10px 0 0; z-index:5; background-color:transparent; background-repeat:no-repeat; -moz-background-size:cover; -o-background-size:cover; background-size:cover; background-position:center; border:none; color:transparent}
-    .wrapper-7 .slick-prev {left:10px; background-image:url("images/arrow-prew-w.png")}
+    .wrapper-7 .slick-prev {left:10px; background-image:url("arrow-prew-w.png")}
     .wrapper-7 .slick-prev:before {content:""; width:40px; height:40px; -webkit-border-radius:50%; -moz-border-radius:50%; border-radius:50%; background-color:transparent; border:2px solid #282828; position:absolute; margin-top:-12px; left:-10px; opacity:1}
     .wrapper-7 .slick-prev:hover:before {opacity:0; -webkit-transition:.2s; -o-transition:.2s; -moz-transition:.2s; transition:.2s}
-    .wrapper-7 .slick-next {right:10px; background-image:url("images/arrow-next-w.png")}
+    .wrapper-7 .slick-next {right:10px; background-image:url("arrow-next-w.png")}
     .wrapper-7 .slick-next:before {content:""; width:40px; height:40px; -webkit-border-radius:50%; -moz-border-radius:50%; border-radius:50%; background-color:transparent; border:2px solid #282828; position:absolute; margin-top:-12px; right:-10px; opacity:1}
     .uslugi  .header h3 {padding:5px 0}
     .uslugi .header .link-popup {margin:5px 0 -5px}
     .wrapper-7 .slick-next:hover:before {opacity:0; -webkit-transition:.2s; -o-transition:.2s; -moz-transition:.2s; transition:.2s}
     .wrapper-8 .slick-next, .slick-prev {top:110%}
-    .wrapper-8 .slick-prev {left:20px; background-image:url("images/arrow-prew-w.png")}
-    .wrapper-8 .slick-next {right:20px; background-image:url("images/arrow-next-w.png")}
+    .wrapper-8 .slick-prev {left:20px; background-image:url("arrow-prew-w.png")}
+    .wrapper-8 .slick-next {right:20px; background-image:url("arrow-next-w.png")}
     .wrapper-8 {min-height:750px}
     .wrapper-8 h3 {padding:50px 0 0}
     .footer {padding:0 0 50px; margin:-65px 0 0}
@@ -495,15 +495,15 @@ div.active-cons {display:block}
     body[class^="usl-"] .content-header p {width:65%}
     .uslugi.usl-3 .content-header p {width:75%}
     .uslugi.usl-4 .content-header p {width:70%}
-    .uslugi.usl-2 .header {background-image:url("images/head-usl-2-mob.jpg")}
-    .uslugi.usl-3 .header {background-image:url("images/head-usl-3-mob.jpg")}
-    .uslugi.usl-4 .header {background-image:url("images/head-usl-4-mod.jpg")}
-    .uslugi.usl-5 .header {background-image:url("images/head-usl-5-mob.jpg")}
-    .uslugi.usl-6 .header {background-image:url("images/head-usl-6-mob.jpg")}
-    .uslugi.usl-7 .header {background-image:url("images/head-usl-7-mob.jpg")}
-    .uslugi.usl-8 .header {background-image:url("images/head-usl-8-mob.jpg")}
-    .uslugi.usl-9 .header {background-image:url("images/head-usl-9-mob.jpg")}
-    .uslugi.usl-10 .header {background-image:url("images/head-usl-10-mob.jpg")}
+    .uslugi.usl-2 .header {background-image:url("head-usl-2-mob.jpg")}
+    .uslugi.usl-3 .header {background-image:url("head-usl-3-mob.jpg")}
+    .uslugi.usl-4 .header {background-image:url("head-usl-4-mod.jpg")}
+    .uslugi.usl-5 .header {background-image:url("head-usl-5-mob.jpg")}
+    .uslugi.usl-6 .header {background-image:url("head-usl-6-mob.jpg")}
+    .uslugi.usl-7 .header {background-image:url("head-usl-7-mob.jpg")}
+    .uslugi.usl-8 .header {background-image:url("head-usl-8-mob.jpg")}
+    .uslugi.usl-9 .header {background-image:url("head-usl-9-mob.jpg")}
+    .uslugi.usl-10 .header {background-image:url("head-usl-10-mob.jpg")}
     .uslugi.usl-3 .header .content-header .col-md-8,
 	.uslugi.usl-4 .header .content-header .col-md-8,
 	.uslugi.usl-5 .header .content-header .col-md-8,

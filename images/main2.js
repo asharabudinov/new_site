@@ -2,7 +2,7 @@ $(document).ready(function() {
     /*===========================================================================================================
      ===========================================================|Menu|===========================================
      ==========================================================================================================*/
-	 
+
 	 $('.slider-services-mob').slick({
         infinite: true,
         speed: 300,
@@ -10,8 +10,8 @@ $(document).ready(function() {
         centerMode: true,
         variableWidth: true
     });
-	 
-	 
+
+
     $('.btn-nav').click(function () {
         $('.nav-menu').css({'left':'0', 'z-index':'10000'});
         $('.block-menu').css({'z-index':'9999', 'opacity':'1'});
@@ -98,7 +98,7 @@ $(document).ready(function() {
     $('.slick-slide.slick-active a div').css({'display':'block','color':'#fff'});
     $('.slick-active:first a div').css({'display':'none'});
     $('.slick-active:last a div').css({'display':'none'});
-	
+
 	function showHideSlideDiv() {
 		$('.slick-slide a div').css({'display':'none'});
         $('.slick-slide.slick-active a div').css({'display':'block','color':'#fff'});
@@ -124,7 +124,7 @@ $(document).ready(function() {
         variableWidth: true
     });
     $('.slide-1').click(function () {
-        location.href = "lazernaya-epilyasia.html";
+        location.href = "../lazernaya-epilyasia.html";
     });
     $('.slide-2').click(function () {
         location.href = "lechenie-akne.html";
@@ -133,7 +133,7 @@ $(document).ready(function() {
         location.href = "lechenie-rezecea.html";
     });
     $('.slide-4').click(function () {
-        location.href = "permanentnyi-makiyag.html";
+        location.href = "../permanentnyi-makiyag.html";
     });
     $('.slide-5').click(function () {
         location.href = "fotoomologenie.html";
@@ -286,7 +286,7 @@ $(document).ready(function() {
 	===========================================================|Slider robot|====================================
 	===========================================================================================================*/
     $('.slider-works').slick();
-	
+
 	/*============================================================================================================
 	 ===========================================================|Slider studio|===================================
 	 ===========================================================================================================*/
@@ -326,11 +326,11 @@ $(document).ready(function() {
 		slides[slideIndex-1].style.display = "block";
 		dots[slideIndex-1].className += " active";
 	}
-	
+
 	window.plusSlides = plusSlides;
 	window.currentSlide = currentSlide;
 	window.showSlides = showSlides;
-	
+
 	window.initCallBackForm = function() {
 		var fieldNameName = '';
 		var fieldNamePhone = '';
@@ -370,9 +370,9 @@ $(document).ready(function() {
 			});
 			return false;
 		});
-		
+
 	};
-	
+
 	window.initCallBackForm();
 
 });
