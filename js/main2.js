@@ -124,7 +124,7 @@ $(document).ready(function() {
         variableWidth: true
     });
     $('.slide-1').click(function () {
-        location.href = "../lazernaya-epilyasia.html";
+        location.href = "lazernaya-epilyasia.html";
     });
     $('.slide-2').click(function () {
         location.href = "lechenie-akne.html";
@@ -133,7 +133,7 @@ $(document).ready(function() {
         location.href = "lechenie-rezecea.html";
     });
     $('.slide-4').click(function () {
-        location.href = "../permanentnyi-makiyag.html";
+        location.href = "permanentnyi-makiyag.html";
     });
     $('.slide-5').click(function () {
         location.href = "fotoomologenie.html";
@@ -301,40 +301,13 @@ $(document).ready(function() {
 		showSlides(slideIndex = n);
 	}
 
-	function showSlides(n) {
-		var i;
-		var slides =document.getElementsByClassName("my-Slides");
-		var dots = document.getElementsByClassName("dot");
 
-		if (n > slides.length)
-		{
-			slideIndex = 1
-		}
-
-		if (n < 1)
-		{
-			slideIndex = slides.length
-		}
-		for (i = 0; i < slides.length; i++)
-		{
-			slides[i].style.display = "none";
-		}
-		for ( i = 0; i < dots.length; i++)
-		{
-			dots[i].className = dots[i].className.replace(" active","");
-		}
-		slides[slideIndex-1].style.display = "block";
-		dots[slideIndex-1].className += " active";
-	}
-
-	window.plusSlides = plusSlides;
-	window.currentSlide = currentSlide;
-	window.showSlides = showSlides;
 
 	window.initCallBackForm = function() {
 		var fieldNameName = '';
 		var fieldNamePhone = '';
 		var fieldNameTime = '';
+        alert('1');
 		$.ajax({
 			url: 'https://silkepil.com.ua/callback/add?sourceType=ajax',
 			method: "GET",
@@ -374,5 +347,37 @@ $(document).ready(function() {
 	};
 
 	window.initCallBackForm();
+
+	function showSlides(n) {
+        var i;
+        var slides =document.getElementsByClassName("my-Slides");
+        var dots = document.getElementsByClassName("dot");
+
+        if (n > slides.length)
+        {
+            slideIndex = 1
+        }
+
+        if (n < 1)
+        {
+            slideIndex = slides.length
+        }
+        for (i = 0; i < slides.length; i++)
+        {
+            slides[i].style.display = "none";
+        }
+        for ( i = 0; i < dots.length; i++)
+        {
+            dots[i].className = dots[i].className.replace(" active","");
+        }
+        if (slides[slideIndex-1]) {
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+        }
+    }
+
+    window.plusSlides = plusSlides;
+    window.currentSlide = currentSlide;
+    window.showSlides = showSlides;
 
 });
