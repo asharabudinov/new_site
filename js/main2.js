@@ -307,7 +307,6 @@ $(document).ready(function() {
 		var fieldNameName = '';
 		var fieldNamePhone = '';
 		var fieldNameTime = '';
-        alert('1');
 		$.ajax({
 			url: 'https://silkepil.com.ua/callback/add?sourceType=ajax',
 			method: "GET",
