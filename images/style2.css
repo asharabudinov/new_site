@@ -577,8 +577,9 @@ div.active-cons {display:block}
 
 .form_box_error {border-color:#f00}
 
-.header .nav-center {padding-top:5px}
+.header .nav-center {padding-top:5px; position:relative}
 .header .nav-center img {width:150px}
+.header a.call-me.show-mob {z-index:2}
 .header .nav-menu-block .logo {width:150px; top:-26px}
 
 @media (min-width:450px) {
