@@ -224,9 +224,9 @@ $(document).ready(function() {
 
     $(".price").hover(
         function () {
-            dti_p = $(this).attr("data-title");
-            dt_target = $("div."+dti_p).attr("data-target");
-            dt_toggle = $("div."+dti_p).attr("data-toggle");
+            var dti_p = $(this).attr("data-title");
+            var dt_target = $("div."+dti_p).attr("data-target");
+            var dt_toggle = $("div."+dti_p).attr("data-toggle");
             $("hr."+dti_p).css({'opacity':'1'});
             $("div."+dti_p).css({'background':'#F9FDFF','border':'3px solid #fdb02a'});
             $("div."+dti_p+" p").css({'background':'#F9FDFF','color':'#282828','font-size':'13px'});
@@ -235,6 +235,7 @@ $(document).ready(function() {
             $("div."+dti_p+" .doted-line").css({'opacity':'0'});
             $("#"+dti_p).addClass("hovers");
         }, function () {
+            var dti_p = $(this).attr("data-title");
             $("hr."+dti_p).css({'opacity':'0'});
             $("div."+dti_p).css({'background':'#F9FDFF','border':'3px solid #F9FDFF'});
             $("div."+dti_p+" p").css({'background':'#F9FDFF','color':'#282828', 'font-size':'13px'});
@@ -243,7 +244,6 @@ $(document).ready(function() {
             $("div."+dti_p+" .doted-line").css({'opacity':'1'});
             $("#"+dti_p).removeClass("hovers");
         });
-
         pol = $('.lb').attr("data-target");
         chasti =  $('.lb_').attr("data-target");
 
