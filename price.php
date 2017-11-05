@@ -5,6 +5,11 @@
             'name' => 'Бикини глубокое',
             'price' => 828,
             'path' => 47
+        ),
+        array(
+            'name' => 'Верхняя часть спины+плечи!',
+            'price' => 858,
+            'path' => 279
         )
     );
 
@@ -59,19 +64,7 @@
                     <div class="part-box-const  active-cons" id="part-1-const">
                         <div class="col-xs-6">
                             <?php echo genPrice($womenBodyZones);?>
-                            <div class="price path279" data-target=" 429 грн" data-toggle="429 грн"
-                                 data-title="path279">
-                                <div class="left">
-                                    <p>Верхняя часть спины+плечи</p>
-                                </div>
-                                <span class="doted-line"></span>
-                                <div class="right">
-                                    <p>
-                                        <span class="skidon">858 грн</span>
-                                        <span class="zacherk"> 429 грн</span>
-                                    </p>
-                                </div>
-                            </div>
+
                             <div class="price path266" data-target=" 429 грн" data-toggle="429 грн"
                                  data-title="path266">
                                 <div class="left">
