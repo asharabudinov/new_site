@@ -583,7 +583,7 @@ div.active-cons {display:block}
 .header .nav-right {z-index: 2}
 .header a.call-me.show-mob {z-index:2}
 .header .nav-menu-block .logo {width:150px; top:-26px}
-
+.header .nav-lend-loc .nav-container {position:absolute; height:100%}
 @media (min-width:450px) {
 	.header .nav-menu-block .logo {width:auto; top:-40px}
 }
