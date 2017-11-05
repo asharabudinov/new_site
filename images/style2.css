@@ -578,8 +578,9 @@ div.active-cons {display:block}
 .form_box_error {border-color:#f00}
 
 .header .nav-left {z-index: 2}
-.header .nav-center {padding-top:5px; position:relative; z-index:2}
+.header .nav-center {padding-top:5px; position:relative; z-index:1}
 .header .nav-center img {width:150px}
+.header .nav-right {z-index: 2}
 .header a.call-me.show-mob {z-index:2}
 .header .nav-menu-block .logo {width:150px; top:-26px}
 
