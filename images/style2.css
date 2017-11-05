@@ -603,6 +603,7 @@ div.active-cons {display:block}
 }
 
 .wrapper-5 h3 {color:#fff}
+.wrapper-5 .show-mob iframe {width:100%}
 
 .slick-slide a div {opacity:0}
 .slick-slide.slick-active a div {opacity:1; -webkit-transition: opacity 0.4s ease-in;
@@ -610,3 +611,4 @@ div.active-cons {display:block}
     -o-transition: opacity 0.4s ease-in;
     -ms-transition: opacity 0.4s ease-in;
     transition: opacity 0.4s ease-in;}
+
