@@ -1,3 +1,35 @@
+<?php
+
+    $womenBodyZones = array(
+        array(
+            'name' => 'Бикини глубокое',
+            'price' => 828,
+            'path' => 47
+        )
+    );
+
+    function genPrice($data) {
+        $html = '';
+        $k = 0.6;
+        foreach ($data as $item) {
+            $html .= '<div class="price path'.$item['path'].'" data-target=" '.$item['price'].' грн" data-toggle="'.$item['price'].' грн"
+                                 data-title="path'.$item['path'].'">
+                                <div class="left"><p>'.$item['name'].'</p></div>
+                                <span class="doted-line"></span>
+                                <div class="right">
+                                    <p>
+                                        <span class="skidon">'.$item['price'].' грн</span>
+                                        <span class="zacherk"> '.round($item['price']*$k).' грн</span>
+                                    </p>
+                                </div>
+                            </div>';
+        }
+        return $html;
+    }
+
+
+?>
+
 <!--============================================================================================================
     ============================================================|Wrapper-4|=========================================
     ===============================================================Зоны==============================================-->
@@ -26,17 +58,7 @@
                 <div class="wumen block-pol active-pol hide-mob">
                     <div class="part-box-const  active-cons" id="part-1-const">
                         <div class="col-xs-6">
-                            <div class="price path47" data-target=" 429 грн" data-toggle="429 грн"
-                                 data-title="path47">
-                                <div class="left"><p>Бикини глубокое</p></div>
-                                <span class="doted-line"></span>
-                                <div class="right">
-                                    <p>
-                                        <span class="skidon">828 грн</span>
-                                        <span class="zacherk"> 414 грн</span>
-                                    </p>
-                                </div>
-                            </div>
+                            <?php echo genPrice($womenBodyZones);?>
                             <div class="price path279" data-target=" 429 грн" data-toggle="429 грн"
                                  data-title="path279">
                                 <div class="left">
