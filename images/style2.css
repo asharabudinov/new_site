@@ -578,9 +578,10 @@ div.active-cons {display:block}
 .form_box_error {border-color:#f00}
 
 .header .nav-left {z-index: 2}
+.header .nav-left button:before {position:absolute; left:0; top:0}
 .header .nav-center {padding-top:5px; position:relative; z-index:1}
 .header .nav-center img {width:150px}
-.header .nav-right {z-index: 2}
+.header .nav-right {z-index:2; top:5px}
 .header a.call-me.show-mob {z-index:2}
 .header .nav-menu-block .logo {width:150px; top:-26px}
 .header .nav-lend-loc .nav-container {position:absolute; height:100%}
@@ -602,9 +603,9 @@ div.active-cons {display:block}
 
 .wrapper-5 h3 {color:#fff}
 
-.slick-slide a div {opacity:0; -webkit-transition: opacity 0.4s ease-in;
+.slick-slide a div {opacity:0}
+.slick-slide.slick-active a div {opacity:1; -webkit-transition: opacity 0.4s ease-in;
     -moz-transition: opacity 0.4s ease-in;
     -o-transition: opacity 0.4s ease-in;
     -ms-transition: opacity 0.4s ease-in;
     transition: opacity 0.4s ease-in;}
-.slick-slide.slick-active a div {opacity:1}
