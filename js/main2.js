@@ -99,6 +99,7 @@ $(document).ready(function() {
     $('.slick-active:first a div').css({'display':'none'});
     $('.slick-active:last a div').css({'display':'none'});
 
+    /*
 	function showHideSlideDiv() {
 		$('.slick-slide a div').css({'display':'none'});
         $('.slick-slide.slick-active a div').css({'display':'block','color':'#fff'});
@@ -106,6 +107,7 @@ $(document).ready(function() {
 	showHideSlideDiv();
     $('.slick-next').click(showHideSlideDiv);
     $('.slick-prev').click(showHideSlideDiv);
+    */
     /*============================================================================================================
      ===========================================================|Slider services mob|=============================
      ===========================================================================================================*/
