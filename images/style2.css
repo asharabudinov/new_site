@@ -582,7 +582,7 @@ div.active-cons {display:block}
 .header .btn-nav:before {position:absolute; left:0; top:0}
 .header .nav-center {padding-top:5px; position:relative; z-index:1}
 .header .nav-center img {width:150px}
-.header .nav-right {z-index:2; top:5px}
+.header .call-me div {z-index:2; top:5px}
 .header a.call-me.show-mob {z-index:2}
 .header .nav-menu-block .logo {width:150px; top:-26px}
 .header .nav-lend-loc .nav-container {position:absolute; height:100%}
