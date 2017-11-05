@@ -4,22 +4,25 @@ $uri = $_SERVER['REQUEST_URI'];
 if (!(strpos($uri, 'callback') !== false || strpos($uri, 'item/edit') !== false)) {
 
     if (strpos($uri, 'lazernaya')) {
-        readFile("lazernaya-epilyasia.html");
+        //readFile("lazernaya-epilyasia.html");
+        require_once("lazernaya-epilyasia.html");
         return;
     } elseif (strpos($uri, 'test.html') !== false) {
         //readFile("test.html");
         require_once("test.html");
         return;
     } elseif (strpos($uri, 'index.html') !== false) {
-        readFile("index.html");
+        //readFile("index.html");
+        require_once("index.html");
         return;
     } elseif (strpos($uri, 'permanentnyi-makiyag.html')) {
-        readFile("permanentnyi-makiyag.html");
-        //require_once("permanentnyi-makiyag.html");
+        //readFile("permanentnyi-makiyag.html");
+        require_once("permanentnyi-makiyag.html");
         return;
     } elseif (strpos($uri, '?') === 1 || strpos($uri, 'index.html') !== false || strpos($uri, '') === 0 || strpos($uri, '/') === 0 || strpos($uri, 'v2') === 0) {
         $cookie = $_COOKIE["land"];
-        readFile("index.html");
+        require_once("index.html");
+        return;
     }
 
 }
