@@ -69,9 +69,9 @@ form.js_feedback div.col-md-6:nth-child(1) {text-align:right}
 .nav-lend-loc .block-phone-hover {-webkit-box-shadow:-1px 17px 35px -20px rgba(0,0,0,0.2); -moz-box-shadow:-1px 17px 35px -20px rgba(0,0,0,0.2); box-shadow:-1px 17px 35px -20px rgba(0,0,0,0.2)}
 .nav-container {position:relative; width:1170px; display:block; margin:auto}
 .nav-container img {margin:0 0 0 -105px}
-.nav-left {position:absolute;left:15px;top:8px;}
+.nav-left {position:absolute; left:0; top:0}
 .nav-center {text-align:center; margin:auto; display:block}
-.nav-right {top:-24px; position:absolute; right:15px}
+.nav-right {position:absolute; left:0; top:0}
 .nav-menu-block {padding:35px 0 0}
 .nav-menu-block * {display:inline-block; vertical-align:middle}
 .logo {margin:auto; display:block; position:relative; top:-40px; right:-90px}
@@ -485,7 +485,6 @@ div.active-cons {display:block}
     .wrapper-5-u .link-popup {margin:30px auto 30px; display:block}
     .wrapper-2-u h3, .wrapper-4-u h3, .wrapper-6-u h3 {padding:20px 0 10px 0 !important}
     .price p, .price2 p {text-align:left}
-    .nav-left {top:-15px}
 }
 @media (max-width:600px){
 	div.thanks-box {}
@@ -591,14 +590,13 @@ div.active-cons {display:block}
 }
 @media (min-width:800px) {
 	.header .btn-nav {top:32px}
-	.header .nav-lend-loc .btn-nav {top:0}
+	.header .nav-lend-loc .btn-nav {top:11px}
+	.header .nav-lend-loc .phone {padding:10px 10px 0 0}
 	.header .nav-menu-block .logo {top:-8px}
 }
 @media (min-width:1170px) {
 	.header .nav-lend-loc .nav-container {position:relative}
 }
-
-.btn-nav.fa.fa-bars {position:absolute; left:25px; top:25px}
 
 .nav-menu button {padding:0; background-size:100% 100%; width:24px; height:15px}
 .nav-menu ul li img {width:150px}
