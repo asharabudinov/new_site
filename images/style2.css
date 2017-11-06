@@ -71,7 +71,7 @@ form.js_feedback div.col-md-6:nth-child(1) {text-align:right}
 .nav-container img {margin:0 0 0 -105px}
 .nav-left {position:absolute; left:0; top:0}
 .nav-center {text-align:center; margin:auto; display:block}
-.nav-right {position:absolute; left:0; top:0}
+.nav-right {position:absolute; right:0; top:0}
 .nav-menu-block {padding:35px 0 0}
 .nav-menu-block * {display:inline-block; vertical-align:middle}
 .logo {margin:auto; display:block; position:relative; top:-40px; right:-90px}
