@@ -349,6 +349,32 @@ $(document).ready(function() {
 	};
 
 	window.initCallBackForm();
+	
+	
+	window.initCallBackForm2 = function() {
+		var $form = $('.js_orderCallForm2');
+		$form.submit(function() {
+			var postData = {};
+			postData['name'] = $form.find('input[name=name]').val();
+			postData['phone'] = $form.find('input[name=phone]').val();
+			postData['email'] = 'noemail@silkepil.com.ua';
+			$.ajax({
+				url: $form.attr('action'),
+				method: "POST",
+				data: postData,
+				dataType: "json",
+				success: function(data) {
+					console.log(data);
+					alert('Мы обязательно вам перезвоним!');
+					$('.js_modal_form-3 .modal_close').click();
+				}
+			});
+			return false;
+		});
+
+	};
+	window.initCallBackForm2();
+	
 
 	function showSlides(n) {
         var i;
