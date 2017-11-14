@@ -1,13 +1,15 @@
 <?php
 $uri = $_SERVER['REQUEST_URI'];
 
+if (strpos($uri, 'callbackhandle.php') !== false) {
+	require_once('callbackhandle.php');
+	return;
+}
+
 if (!(strpos($uri, 'callback') !== false || strpos($uri, 'item/edit') !== false)) {
 
     if (strpos($uri, 'lazernaya')) {
         require_once("lazernaya-epilyasia.html");
-        return;
-    } elseif (strpos($uri, 'callbackhandle.php') !== false) {
-        require_once('callbackhandle.php');
         return;
     } elseif (strpos($uri, 'test.html') !== false) {
         require_once("test.html");
