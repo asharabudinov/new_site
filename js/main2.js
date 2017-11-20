@@ -50,39 +50,7 @@ $(document).ready(function() {
                 $('.nav-lend-loc').css({'top':'-50px', 'z-index':'-1', 'transition':'.5s'});
             }
        });
-    /*===========================================================================================================
-     ===========================================================|Scroll|============================================
-     ===========================================================================================================*/
-    $('a.nav-link-1').click(function(){
-        var el = $(this).attr('href');
-        $('body').animate({
-            scrollTop: $(el).offset().top-50}, 500);
-        return false;
-    });
-    $('a.nav-link-2').click(function(){
-        var el = $(this).attr('href');
-        $('body').animate({
-            scrollTop: $(el).offset().top-50}, 1000);
-        return false;
-    });
-    $('a.nav-link-3').click(function(){
-        var el = $(this).attr('href');
-        $('body').animate({
-            scrollTop: $(el).offset().top-50}, 1500);
-        return false;
-    });
-    $('a.nav-link-4').click(function(){
-        var el = $(this).attr('href');
-        $('body').animate({
-            scrollTop: $(el).offset().top-20}, 2000);
-        return false;
-    });
-    $('a.nav-link-5').click(function(){
-        var el = $(this).attr('href');
-        $('body').animate({
-            scrollTop: $(el).offset().top+20}, 2500);
-        return false;
-    });
+    
     /*===========================================================================================================
      ===========================================================|Phone hover|====================================
      ==========================================================================================================*/
