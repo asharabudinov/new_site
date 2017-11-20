@@ -347,7 +347,6 @@ $(document).ready(function() {
 		});
 
 	};
-
 	window.initCallBackForm();
 	
 	
