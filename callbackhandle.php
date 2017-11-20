@@ -1,24 +1,26 @@
 <?php
 	$responses = array();
+	
+	echo '888';
 
 	//amo
-	//ПРЕДОПРЕДЕЛЯЕМЫЕ ПЕРЕМЕННЫЕ
-	$responsible_user_id = 7292136; //id ответственного по сделке, контакту, компании
-	$lead_name = 'Заявка с сайта'; //Название добавляемой сделки
-	$lead_status_id = '11331793'; //id этапа продаж, куда помещать сделку
-	$contact_name = $_POST['name']; //Название добавляемого контакта
-	$contact_phone = $_POST['phone']; //Телефон контакта
-	$contact_email = $_POST['email']; //Емейл контакта
-	//АВТОРИЗАЦИЯ
+	//РџР Р•Р”РћРџР Р•Р”Р•Р›РЇР•РњР«Р• РџР•Р Р•РњР•РќРќР«Р•
+	$responsible_user_id = 7292136; //id РѕС‚РІРµС‚СЃС‚РІРµРЅРЅРѕРіРѕ РїРѕ СЃРґРµР»РєРµ, РєРѕРЅС‚Р°РєС‚Сѓ, РєРѕРјРїР°РЅРёРё
+	$lead_name = 'Р—Р°СЏРІРєР° СЃ СЃР°Р№С‚Р°'; //РќР°Р·РІР°РЅРёРµ РґРѕР±Р°РІР»СЏРµРјРѕР№ СЃРґРµР»РєРё
+	$lead_status_id = '11331793'; //id СЌС‚Р°РїР° РїСЂРѕРґР°Р¶, РєСѓРґР° РїРѕРјРµС‰Р°С‚СЊ СЃРґРµР»РєСѓ
+	$contact_name = $_POST['name']; //РќР°Р·РІР°РЅРёРµ РґРѕР±Р°РІР»СЏРµРјРѕРіРѕ РєРѕРЅС‚Р°РєС‚Р°
+	$contact_phone = $_POST['phone']; //РўРµР»РµС„РѕРЅ РєРѕРЅС‚Р°РєС‚Р°
+	$contact_email = $_POST['email']; //Р•РјРµР№Р» РєРѕРЅС‚Р°РєС‚Р°
+	//РђР’РўРћР РР—РђР¦РРЇ
 	$user=array(
-		'USER_LOGIN'=>'info@silkepil.com.ua', #Ваш логин (электронная почта)
-		'USER_HASH'=>'14e59bf0e03f313910a00ced18f3e71a' #Хэш для доступа к API (смотрите в профиле пользователя)
+		'USER_LOGIN'=>'info@silkepil.com.ua', #Р’Р°С€ Р»РѕРіРёРЅ (СЌР»РµРєС‚СЂРѕРЅРЅР°СЏ РїРѕС‡С‚Р°)
+		'USER_HASH'=>'14e59bf0e03f313910a00ced18f3e71a' #РҐСЌС€ РґР»СЏ РґРѕСЃС‚СѓРїР° Рє API (СЃРјРѕС‚СЂРёС‚Рµ РІ РїСЂРѕС„РёР»Рµ РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ)
 	);
 	$subdomain='silkepil';
-	#Формируем ссылку для запроса
+	#Р¤РѕСЂРјРёСЂСѓРµРј СЃСЃС‹Р»РєСѓ РґР»СЏ Р·Р°РїСЂРѕСЃР°
 	$link='https://'.$subdomain.'.amocrm.ru/private/api/auth.php?type=json';
-	$curl=curl_init(); #Сохраняем дескриптор сеанса cURL
-	#Устанавливаем необходимые опции для сеанса cURL
+	$curl=curl_init(); #РЎРѕС…СЂР°РЅСЏРµРј РґРµСЃРєСЂРёРїС‚РѕСЂ СЃРµР°РЅСЃР° cURL
+	#РЈСЃС‚Р°РЅР°РІР»РёРІР°РµРј РЅРµРѕР±С…РѕРґРёРјС‹Рµ РѕРїС†РёРё РґР»СЏ СЃРµР°РЅСЃР° cURL
 	curl_setopt($curl,CURLOPT_RETURNTRANSFER,true);
 	curl_setopt($curl,CURLOPT_USERAGENT,'amoCRM-API-client/1.0');
 	curl_setopt($curl,CURLOPT_URL,$link);
@@ -29,16 +31,16 @@
 	curl_setopt($curl,CURLOPT_COOKIEJAR,dirname(__FILE__).'/cookie.txt'); #PHP>5.3.6 dirname(__FILE__) -> __DIR__
 	curl_setopt($curl,CURLOPT_SSL_VERIFYPEER,0);
 	curl_setopt($curl,CURLOPT_SSL_VERIFYHOST,0);
-	$out=curl_exec($curl); #Инициируем запрос к API и сохраняем ответ в переменную
-	$code=curl_getinfo($curl,CURLINFO_HTTP_CODE); #Получим HTTP-код ответа сервера
-	curl_close($curl);  #Завершаем сеанс cURL
+	$out=curl_exec($curl); #РРЅРёС†РёРёСЂСѓРµРј Р·Р°РїСЂРѕСЃ Рє API Рё СЃРѕС…СЂР°РЅСЏРµРј РѕС‚РІРµС‚ РІ РїРµСЂРµРјРµРЅРЅСѓСЋ
+	$code=curl_getinfo($curl,CURLINFO_HTTP_CODE); #РџРѕР»СѓС‡РёРј HTTP-РєРѕРґ РѕС‚РІРµС‚Р° СЃРµСЂРІРµСЂР°
+	curl_close($curl);  #Р—Р°РІРµСЂС€Р°РµРј СЃРµР°РЅСЃ cURL
 	$Response=json_decode($out,true);
 	$responses['auth'] = $Response;
-	//echo '<b>Авторизация:</b>'; echo '<pre>'; print_r($Response); echo '</pre>';
-	//ПОЛУЧАЕМ ДАННЫЕ АККАУНТА
-	$link='https://'.$subdomain.'.amocrm.ru/private/api/v2/json/accounts/current'; #$subdomain уже объявляли выше
-	$curl=curl_init(); #Сохраняем дескриптор сеанса cURL
-	#Устанавливаем необходимые опции для сеанса cURL
+	//echo '<b>РђРІС‚РѕСЂРёР·Р°С†РёСЏ:</b>'; echo '<pre>'; print_r($Response); echo '</pre>';
+	//РџРћР›РЈР§РђР•Рњ Р”РђРќРќР«Р• РђРљРљРђРЈРќРўРђ
+	$link='https://'.$subdomain.'.amocrm.ru/private/api/v2/json/accounts/current'; #$subdomain СѓР¶Рµ РѕР±СЉСЏРІР»СЏР»Рё РІС‹С€Рµ
+	$curl=curl_init(); #РЎРѕС…СЂР°РЅСЏРµРј РґРµСЃРєСЂРёРїС‚РѕСЂ СЃРµР°РЅСЃР° cURL
+	#РЈСЃС‚Р°РЅР°РІР»РёРІР°РµРј РЅРµРѕР±С…РѕРґРёРјС‹Рµ РѕРїС†РёРё РґР»СЏ СЃРµР°РЅСЃР° cURL
 	curl_setopt($curl,CURLOPT_RETURNTRANSFER,true);
 	curl_setopt($curl,CURLOPT_USERAGENT,'amoCRM-API-client/1.0');
 	curl_setopt($curl,CURLOPT_URL,$link);
@@ -47,45 +49,45 @@
 	curl_setopt($curl,CURLOPT_COOKIEJAR,dirname(__FILE__).'/cookie.txt'); #PHP>5.3.6 dirname(__FILE__) -> __DIR__
 	curl_setopt($curl,CURLOPT_SSL_VERIFYPEER,0);
 	curl_setopt($curl,CURLOPT_SSL_VERIFYHOST,0);
-	$out=curl_exec($curl); #Инициируем запрос к API и сохраняем ответ в переменную
+	$out=curl_exec($curl); #РРЅРёС†РёРёСЂСѓРµРј Р·Р°РїСЂРѕСЃ Рє API Рё СЃРѕС…СЂР°РЅСЏРµРј РѕС‚РІРµС‚ РІ РїРµСЂРµРјРµРЅРЅСѓСЋ
 	$code=curl_getinfo($curl,CURLINFO_HTTP_CODE);
 	curl_close($curl);
 	$Response=json_decode($out,true);
 	$responses['auth2'] = $Response;
 	$account=$Response['response']['account'];
-	//echo '<b>Данные аккаунта:</b>'; echo '<pre>'; print_r($Response); echo '</pre>';
-	//ПОЛУЧАЕМ СУЩЕСТВУЮЩИЕ ПОЛЯ
-	$amoAllFields = $account['custom_fields']; //Все поля
-	$amoConactsFields = $account['custom_fields']['contacts']; //Поля контактов
-	//echo '<b>Поля из амо:</b>'; echo '<pre>'; print_r($amoConactsFields); echo '</pre>';
-	//ФОРМИРУЕМ МАССИВ С ЗАПОЛНЕННЫМИ ПОЛЯМИ КОНТАКТА
-	//Стандартные поля амо:
+	//echo '<b>Р”Р°РЅРЅС‹Рµ Р°РєРєР°СѓРЅС‚Р°:</b>'; echo '<pre>'; print_r($Response); echo '</pre>';
+	//РџРћР›РЈР§РђР•Рњ РЎРЈР©Р•РЎРўР’РЈР®Р©РР• РџРћР›РЇ
+	$amoAllFields = $account['custom_fields']; //Р’СЃРµ РїРѕР»СЏ
+	$amoConactsFields = $account['custom_fields']['contacts']; //РџРѕР»СЏ РєРѕРЅС‚Р°РєС‚РѕРІ
+	//echo '<b>РџРѕР»СЏ РёР· Р°РјРѕ:</b>'; echo '<pre>'; print_r($amoConactsFields); echo '</pre>';
+	//Р¤РћР РњРР РЈР•Рњ РњРђРЎРЎРР’ РЎ Р—РђРџРћР›РќР•РќРќР«РњР РџРћР›РЇРњР РљРћРќРўРђРљРўРђ
+	//РЎС‚Р°РЅРґР°СЂС‚РЅС‹Рµ РїРѕР»СЏ Р°РјРѕ:
 	$sFields = array_flip(array(
-			'PHONE', //Телефон. Варианты: WORK, WORKDD, MOB, FAX, HOME, OTHER
-			'EMAIL' //Email. Варианты: WORK, PRIV, OTHER
+			'PHONE', //РўРµР»РµС„РѕРЅ. Р’Р°СЂРёР°РЅС‚С‹: WORK, WORKDD, MOB, FAX, HOME, OTHER
+			'EMAIL' //Email. Р’Р°СЂРёР°РЅС‚С‹: WORK, PRIV, OTHER
 		)
 	);
-	//Проставляем id этих полей из базы амо
+	//РџСЂРѕСЃС‚Р°РІР»СЏРµРј id СЌС‚РёС… РїРѕР»РµР№ РёР· Р±Р°Р·С‹ Р°РјРѕ
 	foreach($amoConactsFields as $afield) {
 		if(isset($sFields[$afield['code']])) {
 			$sFields[$afield['code']] = $afield['id'];
 		}
 	}
-	//ДОБАВЛЯЕМ СДЕЛКУ
+	//Р”РћР‘РђР’Р›РЇР•Рњ РЎР”Р•Р›РљРЈ
 	$leads['request']['leads']['add']=array(
 		array(
 			'name' => $lead_name,
-			'status_id' => $lead_status_id, //id статуса
-			'responsible_user_id' => $responsible_user_id, //id ответственного по сделке
+			'status_id' => $lead_status_id, //id СЃС‚Р°С‚СѓСЃР°
+			'responsible_user_id' => $responsible_user_id, //id РѕС‚РІРµС‚СЃС‚РІРµРЅРЅРѕРіРѕ РїРѕ СЃРґРµР»РєРµ
 			//'date_create'=>1298904164, //optional
 			//'price'=>300000,
-			//'tags' => 'Important, USA', #Теги
+			//'tags' => 'Important, USA', #РўРµРіРё
 			//'custom_fields'=>array()
 		)
 	);
 	$link='https://'.$subdomain.'.amocrm.ru/private/api/v2/json/leads/set';
-	$curl=curl_init(); #Сохраняем дескриптор сеанса cURL
-	#Устанавливаем необходимые опции для сеанса cURL
+	$curl=curl_init(); #РЎРѕС…СЂР°РЅСЏРµРј РґРµСЃРєСЂРёРїС‚РѕСЂ СЃРµР°РЅСЃР° cURL
+	#РЈСЃС‚Р°РЅР°РІР»РёРІР°РµРј РЅРµРѕР±С…РѕРґРёРјС‹Рµ РѕРїС†РёРё РґР»СЏ СЃРµР°РЅСЃР° cURL
 	curl_setopt($curl,CURLOPT_RETURNTRANSFER,true);
 	curl_setopt($curl,CURLOPT_USERAGENT,'amoCRM-API-client/1.0');
 	curl_setopt($curl,CURLOPT_URL,$link);
@@ -97,21 +99,21 @@
 	curl_setopt($curl,CURLOPT_COOKIEJAR,dirname(__FILE__).'/cookie.txt'); #PHP>5.3.6 dirname(__FILE__) -> __DIR__
 	curl_setopt($curl,CURLOPT_SSL_VERIFYPEER,0);
 	curl_setopt($curl,CURLOPT_SSL_VERIFYHOST,0);
-	$out=curl_exec($curl); #Инициируем запрос к API и сохраняем ответ в переменную
+	$out=curl_exec($curl); #РРЅРёС†РёРёСЂСѓРµРј Р·Р°РїСЂРѕСЃ Рє API Рё СЃРѕС…СЂР°РЅСЏРµРј РѕС‚РІРµС‚ РІ РїРµСЂРµРјРµРЅРЅСѓСЋ
 	$code=curl_getinfo($curl,CURLINFO_HTTP_CODE);
 	$Response=json_decode($out,true);
 	$responses['leads_set'] = $Response;
-	//echo '<b>Новая сделка:</b>'; echo '<pre>'; print_r($Response); echo '</pre>';
+	//echo '<b>РќРѕРІР°СЏ СЃРґРµР»РєР°:</b>'; echo '<pre>'; print_r($Response); echo '</pre>';
 	if(is_array($Response['response']['leads']['add']))
 		foreach($Response['response']['leads']['add'] as $lead) {
-			$lead_id = $lead["id"]; //id новой сделки
+			$lead_id = $lead["id"]; //id РЅРѕРІРѕР№ СЃРґРµР»РєРё
 		};
-	//ДОБАВЛЯЕМ СДЕЛКУ - КОНЕЦ
-	//ДОБАВЛЕНИЕ КОНТАКТА
+	//Р”РћР‘РђР’Р›РЇР•Рњ РЎР”Р•Р›РљРЈ - РљРћРќР•Р¦
+	//Р”РћР‘РђР’Р›Р•РќРР• РљРћРќРўРђРљРўРђ
 	$contact = array(
 		'name' => $contact_name,
-		'linked_leads_id' => array($lead_id), //id сделки
-		'responsible_user_id' => $responsible_user_id, //id ответственного
+		'linked_leads_id' => array($lead_id), //id СЃРґРµР»РєРё
+		'responsible_user_id' => $responsible_user_id, //id РѕС‚РІРµС‚СЃС‚РІРµРЅРЅРѕРіРѕ
 		'custom_fields'=>array(
 			array(
 				'id' => $sFields['PHONE'],
@@ -134,10 +136,10 @@
 		)
 	);
 	$set['request']['contacts']['add'][]=$contact;
-	#Формируем ссылку для запроса
+	#Р¤РѕСЂРјРёСЂСѓРµРј СЃСЃС‹Р»РєСѓ РґР»СЏ Р·Р°РїСЂРѕСЃР°
 	$link='https://'.$subdomain.'.amocrm.ru/private/api/v2/json/contacts/set';
-	$curl=curl_init(); #Сохраняем дескриптор сеанса cURL
-	#Устанавливаем необходимые опции для сеанса cURL
+	$curl=curl_init(); #РЎРѕС…СЂР°РЅСЏРµРј РґРµСЃРєСЂРёРїС‚РѕСЂ СЃРµР°РЅСЃР° cURL
+	#РЈСЃС‚Р°РЅР°РІР»РёРІР°РµРј РЅРµРѕР±С…РѕРґРёРјС‹Рµ РѕРїС†РёРё РґР»СЏ СЃРµР°РЅСЃР° cURL
 	curl_setopt($curl,CURLOPT_RETURNTRANSFER,true);
 	curl_setopt($curl,CURLOPT_USERAGENT,'amoCRM-API-client/1.0');
 	curl_setopt($curl,CURLOPT_URL,$link);
@@ -149,12 +151,12 @@
 	curl_setopt($curl,CURLOPT_COOKIEJAR,dirname(__FILE__).'/cookie.txt'); #PHP>5.3.6 dirname(__FILE__) -> __DIR__
 	curl_setopt($curl,CURLOPT_SSL_VERIFYPEER,0);
 	curl_setopt($curl,CURLOPT_SSL_VERIFYHOST,0);
-	$out=curl_exec($curl); #Инициируем запрос к API и сохраняем ответ в переменную
+	$out=curl_exec($curl); #РРЅРёС†РёРёСЂСѓРµРј Р·Р°РїСЂРѕСЃ Рє API Рё СЃРѕС…СЂР°РЅСЏРµРј РѕС‚РІРµС‚ РІ РїРµСЂРµРјРµРЅРЅСѓСЋ
 	$code=curl_getinfo($curl,CURLINFO_HTTP_CODE);
 	CheckCurlResponse($code);
 	$Response=json_decode($out,true);
 	$responses['add_contact'] = $Response;
-	//ДОБАВЛЕНИЕ КОНТАКТА - КОНЕЦ
+	//Р”РћР‘РђР’Р›Р•РќРР• РљРћРќРўРђРљРўРђ - РљРћРќР•Р¦
 	
 	echo json_encode($responses);
 ?>
