@@ -59,6 +59,8 @@ if (count(explode('.', $_SERVER['SERVER_NAME'])) === 1) {
     $environment = 'dev';
 }
 
+$environment = 'dev';
+
 ini_set('display_errors', $environment === 'prod' ? 'Off' : 'On');
 error_reporting(E_ALL & ~E_NOTICE);
 
