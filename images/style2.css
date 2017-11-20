@@ -616,3 +616,6 @@ div.active-cons {display:block}
 .slick-slide a div {opacity:0}
 .slick-slide.slick-active a div {opacity:1; -webkit-transition:opacity 0.4s ease-in; -moz-transition:opacity 0.4s ease-in; -o-transition:opacity 0.4s ease-in; -ms-transition:opacity 0.4s ease-in; transition:opacity 0.4s ease-in}
 
+.js__success_block {float:left; width:100%}
+.js__success_block p {font-size:18px; color:#2dc36a}
+
