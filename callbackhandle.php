@@ -1,10 +1,6 @@
 <?php
 
-ini_set('display_errors', 'On');
-
 	$responses = array();
-	
-	echo '888';
 
 	//amo
 	//ПРЕДОПРЕДЕЛЯЕМЫЕ ПЕРЕМЕННЫЕ
@@ -40,8 +36,6 @@ ini_set('display_errors', 'On');
 	
 	$Response=json_decode($out,true);
 	
-	
-	var_dump($Response);
 	$responses['auth'] = $Response; //TODO delete from js-response
 	
 	//echo '<b>Авторизация:</b>'; echo '<pre>'; print_r($Response); echo '</pre>';
@@ -63,7 +57,6 @@ ini_set('display_errors', 'On');
 	$Response=json_decode($out,true);
 	
 	$responses['auth2'] = $Response; //TODO delete from js-response
-	var_dump($Response);
 	
 	$account=$Response['response']['account'];
 	//echo '<b>Данные аккаунта:</b>'; echo '<pre>'; print_r($Response); echo '</pre>';
@@ -116,8 +109,6 @@ ini_set('display_errors', 'On');
 	
 	
 	$responses['leads_set'] = $Response;
-	
-	
 	
 	//echo '<b>Новая сделка:</b>'; echo '<pre>'; print_r($Response); echo '</pre>';
 	if(is_array($Response['response']['leads']['add']))
