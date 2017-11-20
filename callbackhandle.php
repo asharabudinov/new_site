@@ -36,8 +36,6 @@
 	
 	$Response=json_decode($out,true);
 	
-	$responses['auth'] = $Response; //TODO delete from js-response
-	
 	//echo '<b>Авторизация:</b>'; echo '<pre>'; print_r($Response); echo '</pre>';
 	//ПОЛУЧАЕМ ДАННЫЕ АККАУНТА
 	$link='https://'.$subdomain.'.amocrm.ru/private/api/v2/json/accounts/current'; #$subdomain уже объявляли выше
@@ -55,8 +53,6 @@
 	$code=curl_getinfo($curl,CURLINFO_HTTP_CODE);
 	curl_close($curl);
 	$Response=json_decode($out,true);
-	
-	$responses['auth2'] = $Response; //TODO delete from js-response
 	
 	$account=$Response['response']['account'];
 	//echo '<b>Данные аккаунта:</b>'; echo '<pre>'; print_r($Response); echo '</pre>';

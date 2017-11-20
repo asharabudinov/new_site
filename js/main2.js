@@ -355,18 +355,31 @@ $(document).ready(function() {
 		var $form = $('.js_orderCallForm2');
 		$form.submit(function() {
 			var postData = {};
+			var errorCount = 0;
 			postData['name'] = $form.find('input[name=name]').val();
 			postData['phone'] = $form.find('input[name=phone]').val();
 			postData['email'] = 'noemail@silkepil.com.ua';
+			$form.find('.form_box').removeClass('form_box_error');
+			if(postData['name'].length < 3) {
+				$form.find('input[name=name]').parent().addClass('form_box_error');
+				errorCount++;
+			}
+			if(postData['phone'].length < 6) {
+				$form.find('input[name=phone]').parent().addClass('form_box_error');
+				errorCount++;
+			}
+			if(errorCount) {
+				return false;
+			}
 			$.ajax({
 				url: $form.attr('action'),
 				method: "POST",
 				data: postData,
 				dataType: "json",
 				success: function(data) {
-					console.log(data);
-					alert('Мы обязательно вам перезвоним!');
-					$('.js_modal_form-3 .modal_close').click();
+					$form.hide();
+					$form.parent().find('.js__success_block').show();
+					//$('.js_modal_form-3 .modal_close').click();
 				}
 			});
 			return false;
