@@ -1,4 +1,7 @@
 <?php
+
+ini_set('display_errors', 'On');
+
 	$responses = array();
 	
 	echo '888';
