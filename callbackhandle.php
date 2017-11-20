@@ -38,6 +38,11 @@ ini_set('display_errors', 'On');
 	$code=curl_getinfo($curl,CURLINFO_HTTP_CODE); #Получим HTTP-код ответа сервера
 	curl_close($curl);  #Завершаем сеанс cURL
 	$Response=json_decode($out,true);
+	
+	
+	var_dump($Response);
+	
+	
 	$responses['auth'] = $Response;
 	//echo '<b>Авторизация:</b>'; echo '<pre>'; print_r($Response); echo '</pre>';
 	//ПОЛУЧАЕМ ДАННЫЕ АККАУНТА
