@@ -113,7 +113,12 @@ ini_set('display_errors', 'On');
 	$out=curl_exec($curl); #Инициируем запрос к API и сохраняем ответ в переменную
 	$code=curl_getinfo($curl,CURLINFO_HTTP_CODE);
 	$Response=json_decode($out,true);
+	
+	
 	$responses['leads_set'] = $Response;
+	
+	
+	
 	//echo '<b>Новая сделка:</b>'; echo '<pre>'; print_r($Response); echo '</pre>';
 	if(is_array($Response['response']['leads']['add']))
 		foreach($Response['response']['leads']['add'] as $lead) {
@@ -164,7 +169,7 @@ ini_set('display_errors', 'On');
 	curl_setopt($curl,CURLOPT_SSL_VERIFYHOST,0);
 	$out=curl_exec($curl); #Инициируем запрос к API и сохраняем ответ в переменную
 	$code=curl_getinfo($curl,CURLINFO_HTTP_CODE);
-	CheckCurlResponse($code);
+
 	$Response=json_decode($out,true);
 	$responses['add_contact'] = $Response;
 	//ДОБАВЛЕНИЕ КОНТАКТА - КОНЕЦ
