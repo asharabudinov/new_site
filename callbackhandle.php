@@ -37,13 +37,13 @@ ini_set('display_errors', 'On');
 	$out=curl_exec($curl); #Инициируем запрос к API и сохраняем ответ в переменную
 	$code=curl_getinfo($curl,CURLINFO_HTTP_CODE); #Получим HTTP-код ответа сервера
 	curl_close($curl);  #Завершаем сеанс cURL
+	
 	$Response=json_decode($out,true);
 	
 	
 	var_dump($Response);
+	$responses['auth'] = $Response; //TODO delete from js-response
 	
-	
-	$responses['auth'] = $Response;
 	//echo '<b>Авторизация:</b>'; echo '<pre>'; print_r($Response); echo '</pre>';
 	//ПОЛУЧАЕМ ДАННЫЕ АККАУНТА
 	$link='https://'.$subdomain.'.amocrm.ru/private/api/v2/json/accounts/current'; #$subdomain уже объявляли выше
@@ -61,7 +61,10 @@ ini_set('display_errors', 'On');
 	$code=curl_getinfo($curl,CURLINFO_HTTP_CODE);
 	curl_close($curl);
 	$Response=json_decode($out,true);
-	$responses['auth2'] = $Response;
+	
+	$responses['auth2'] = $Response; //TODO delete from js-response
+	var_dump($Response);
+	
 	$account=$Response['response']['account'];
 	//echo '<b>Данные аккаунта:</b>'; echo '<pre>'; print_r($Response); echo '</pre>';
 	//ПОЛУЧАЕМ СУЩЕСТВУЮЩИЕ ПОЛЯ
