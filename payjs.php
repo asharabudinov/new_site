@@ -29,7 +29,10 @@
 	$liqpay = new LiqPay('i79786110481', '8g5zBece2D1usLukfB6qFafuTIg5BMrA5l1Gwo9x');
 	$html = $liqpay->cnb_form($data);
 
+	$formId = time();
 ?>
 (function() {
-	$('body').append('<div class="js_silkEpil_pay_container" style="display:none"><?=$html?></div>');
+	var formBase64 = '<?=base64_encode($html)?>';
+	$('body').append('<div class="js_silkEpil_pay_container_<?=$formId?>" style="display:none">'+atob(formBase64)+'</div>');
+	$('js_silkEpil_pay_container_<?=$formId?> form').submit();
 }());
