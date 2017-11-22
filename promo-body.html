@@ -399,15 +399,48 @@ else if (plp.screens === 'screens-xs-sm') {
 
 <script>
 
-$('.js__callback_form').submit(function() {
-	alert('bi');
+$('.js__callback_form .submit').click(function() {
+	alert('bi2');
+	window.sweetAlert('ss');
 	return false;
 });
 
-$('.js__callback_form .submit').click(function() {
-	alert('bi');
-	return false;
-});
+window.initCallBackForm3 = function() {
+	var $form = $('.js__callback_form');
+	$form.submit(function() {
+		var postData = {};
+		var errorCount = 0;
+		var $fieldName = $form.find('.field[data-type=name]');
+		var $fieldPhone = $form.find('.field[data-type=phone]');
+		postData['name'] = $fieldName.find('input').val();
+		postData['phone'] = $fieldPhone.find('input').val();
+		postData['email'] = 'noemail@silkepil.com.ua';
+		$form.find('.field').removeClass('form_field_error');
+		if(postData['name'].length < 3) {
+			$fieldName.addClass('form_field_error');
+			errorCount++;
+		}
+		if(postData['phone'].length < 6) {
+			$fieldPhone.addClass('form_field_error');
+			errorCount++;
+		}
+		if(errorCount) {
+			return false;
+		}
+		$.ajax({
+			url: $form.attr('action'),
+			method: "POST",
+			data: postData,
+			dataType: "json",
+			success: function(data) {
+				window.sweetAlert('ss');
+			}
+		});
+		return false;
+	});
+
+};
+window.initCallBackForm3();
 	
 </script>
 
