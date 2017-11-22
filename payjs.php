@@ -1,1 +1,35 @@
-alert('bi');
+<?
+
+	$amount = (float) $_GET['amount'];
+	$desctiption =  $_GET['desctiption'];
+	
+	if($amount === 0) {
+		echo '//need amount field';
+		exit();
+	}
+	
+	if(strlen($desctiption) < 3) {
+		echo '//need desctiption field. min lenght 3';
+		exit();
+	}
+	
+	
+	$data = array(
+		'action'         => 'pay',
+		'amount'         => $amount,
+		'currency'       => 'UAH',
+		'description'    => $desctiption,
+		'order_id'       => time(),
+		'version'        => '3'
+	);
+	
+	var_dump($data);
+	
+	// https://www.liqpay.ua/documentation/api/aquiring/widget/doc
+	//require_once('LiqPay.php');
+	//$liqpay = new LiqPay('i79786110481', '8g5zBece2D1usLukfB6qFafuTIg5BMrA5l1Gwo9x');
+	//$html = $liqpay->cnb_form();
+?>
+(function() {
+	
+}());
