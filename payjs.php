@@ -1,15 +1,15 @@
 <?
 
 	$amount = (float) $_GET['amount'];
-	$desctiption =  $_GET['desctiption'];
+	$description = $_GET['description'];
 	
 	if($amount === 0) {
 		echo '//need amount field';
 		exit();
 	}
 	
-	if(strlen($desctiption) < 3) {
-		echo '//need desctiption field. min lenght 3';
+	if(strlen($description) < 3) {
+		echo '//need description field. min lenght 3';
 		exit();
 	}
 	
