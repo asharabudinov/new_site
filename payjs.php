@@ -24,6 +24,7 @@
 		'server_url' => 'https://silkepil.com.ua/payment-result'
 	);
 	
+	//$('head').append('<script src="https://silkepil.com.ua/pay.js?amount=1.2&description=%D0%94%D0%B5%D1%81%D0%BA%D1%80%D0%B8%D0%BF%D1%88%D0%BD%20%D1%81%20%D0%BF%D1%80%D0%BE%D0%B1%D0%B5%D0%BB%D0%BE%D0%BC"></script>');
 	//https://www.liqpay.ua/documentation/api/aquiring/widget/doc
 	require_once('LiqPay.php');
 	$liqpay = new LiqPay('i79786110481', '8g5zBece2D1usLukfB6qFafuTIg5BMrA5l1Gwo9x');
@@ -34,5 +35,5 @@
 (function() {
 	var formBase64 = '<?=base64_encode($html)?>';
 	$('body').append('<div class="js_silkEpil_pay_container_<?=$formId?>" style="display:none">'+atob(formBase64)+'</div>');
-	$('js_silkEpil_pay_container_<?=$formId?> form').submit();
+	$('.js_silkEpil_pay_container_<?=$formId?> form').submit();
 }());
