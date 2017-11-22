@@ -26,9 +26,10 @@
 	
 	//https://www.liqpay.ua/documentation/api/aquiring/widget/doc
 	require_once('LiqPay.php');
-	echo 1;
 	$liqpay = new LiqPay('i79786110481', '8g5zBece2D1usLukfB6qFafuTIg5BMrA5l1Gwo9x');
-	echo 2;
-	$html = $liqpay->cnb_form();
-	echo $html;
+	$html = $liqpay->cnb_form($data);
+
 ?>
+(function() {
+	$('body').append('<div class="js_silkEpil_pay_container" style="display:none"><?=$html?></div>');
+}());
