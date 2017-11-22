@@ -404,17 +404,21 @@ else if (plp.screens === 'screens-xs-sm') {
 window.initCallBackForm3 = function() {
 	var $form = $('.js__callback_form');
 	$form.submit(function() {
-	alert(1);
 		return false;
 	});
 	$form.find('.submit').click(function() {
-	alert(2);
 		var postData = {};
 		var errorCount = 0;
 		var $fieldName = $form.find('.field[data-type=name]');
 		var $fieldPhone = $form.find('.field[data-type=phone]');
 		postData['name'] = $fieldName.find('input').val();
+		if(postData['name'] === 'Ваше имя') {
+			postData['name'] = '';
+		}
 		postData['phone'] = $fieldPhone.find('input').val();
+		if(postData['phone'] === 'Телефон *') {
+			postData['phone'] = '';
+		}
 		postData['email'] = 'noemail@silkepil.com.ua';
 		$form.find('.field').removeClass('form_field_error');
 		if(postData['name'].length < 3) {
@@ -429,12 +433,12 @@ window.initCallBackForm3 = function() {
 			return false;
 		}
 		$.ajax({
-			url: $form.attr('action'),
+			url: 'https://silkepil.com.ua/callbackhandle.php',
 			method: "POST",
 			data: postData,
 			dataType: "json",
 			success: function(data) {
-				window.sweetAlert('ss');
+				window.sweetAlert('Наш менеджер уже получил ваши контакты, скоро вам перезвонят...');
 			}
 		});
 		return false;
