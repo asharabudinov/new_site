@@ -14,8 +14,11 @@ if (!(strpos($uri, 'callback') !== false || strpos($uri, 'item/edit') !== false)
     } elseif (strpos($uri, 'test.html') !== false) {
         require_once("test.html");
         return;
-    } elseif (strpos($uri, 'index.html') !== false) {
-        require_once("index.html");
+    } elseif (strpos($uri, 'test.html') !== false) {
+        require_once("test.html");
+        return;
+    } elseif (strpos($uri, 'promo-body') !== false) {
+        require_once("promo-body.html");
         return;
     } elseif (strpos($uri, 'permanentnyi-makiyag.html')) {
         require_once("permanentnyi-makiyag.html");
