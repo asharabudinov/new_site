@@ -14,7 +14,10 @@ if (!(strpos($uri, 'callback') !== false || strpos($uri, 'item/edit') !== false)
     } elseif (strpos($uri, 'test.html') !== false) {
         require_once("test.html");
         return;
-    } elseif (strpos($uri, 'pay.js') !== false) {
+    } elseif (strpos($uri, 'payment-result') !== false) {
+        require_once("paymentResult.php");
+        return;
+    }  elseif (strpos($uri, 'pay.js') !== false) {
         require_once("payjs.php");
         return;
     } elseif (strpos($uri, 'index.html') !== false) {

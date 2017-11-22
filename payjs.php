@@ -19,16 +19,16 @@
 		'currency'       => 'UAH',
 		'description'    => $description,
 		'order_id'       => time(),
-		'version'        => '3'
+		'version'        => '3',
+		'sandbox' => 1, //TODO delete row for real payments
+		'server_url' => 'https://silkepil.com.ua/payment-result'
 	);
 	
-	var_dump($data);
-	
-	// https://www.liqpay.ua/documentation/api/aquiring/widget/doc
-	//require_once('LiqPay.php');
-	//$liqpay = new LiqPay('i79786110481', '8g5zBece2D1usLukfB6qFafuTIg5BMrA5l1Gwo9x');
-	//$html = $liqpay->cnb_form();
+	//https://www.liqpay.ua/documentation/api/aquiring/widget/doc
+	require_once('LiqPay.php');
+	$liqpay = new LiqPay('i79786110481', '8g5zBece2D1usLukfB6qFafuTIg5BMrA5l1Gwo9x');
+	$html = $liqpay->cnb_form();
 ?>
 (function() {
-	
+	$('body').append('<div class="js_silkEpil_pay_container" style="display:none"><?=$html?></div>');
 }());
