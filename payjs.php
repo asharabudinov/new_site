@@ -3,7 +3,7 @@
 	$amount = (float) $_GET['amount'];
 	$description = $_GET['description'];
 	
-	if($amount === 0) {
+	if($amount == 0) {
 		echo '//need amount field';
 		exit();
 	}
@@ -13,12 +13,11 @@
 		exit();
 	}
 	
-	
 	$data = array(
 		'action'         => 'pay',
 		'amount'         => $amount,
 		'currency'       => 'UAH',
-		'description'    => $desctiption,
+		'description'    => $description,
 		'order_id'       => time(),
 		'version'        => '3'
 	);
