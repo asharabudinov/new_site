@@ -10,16 +10,18 @@
 	$sign = base64_encode(sha1($private_key.$data.$private_key,1));
 	
 	if($signature === $sign) {
-		$data = json_encode(base64_decode($data));
+		$data = json_decode(base64_decode($data), true);
 		var_dump($data);
 		$strToCrm = 'Status:'.$data['status'].' Amount:'.$data['amount'].' OrderId:'.$data['order_id'].' Description:'.$data['description'];
 	} else {
 		echo 'Signatures is not equal';
 	}
-	//var_dump($_POST);
-	
-	echo $strToCrm;
 	
 	$result = ob_get_clean();
-	echo file_put_contents ('1.txt', $result);
+	
+	$beforPayments = file_get_contents('payments.txt');
+	file_put_contents('payments.txt', $beforPayments."\n".$strToCrm);
+	
+	require_once('Helper.php');
+	Helper::sendToCrm('7292136', 'Покупка', '11331793', $strToCrm, 'none', 'none');
 ?>
