@@ -18,7 +18,7 @@
 		'amount'         => $amount,
 		'currency'       => 'UAH',
 		'description'    => $description,
-		'order_id'       => time(),
+		'order_id'       => 'order_'.time(),
 		'version'        => '3',
 		'sandbox' => 1, //TODO delete row for real payments
 		'server_url' => 'https://silkepil.com.ua/payment-result'
