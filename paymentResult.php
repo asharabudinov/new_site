@@ -2,7 +2,7 @@
 	//https://www.liqpay.ua/documentation/api/callback
 	ob_start();
 	
-	$private_key = 'i79786110481';
+	$private_key = '8g5zBece2D1usLukfB6qFafuTIg5BMrA5l1Gwo9x';
 	
 	$data = $_POST['data'];
 	$signature = $_POST['signature'];
