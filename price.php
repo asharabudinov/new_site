@@ -10,6 +10,96 @@
             'name' => 'Верхняя часть спины+плечи',
             'price' => 858,
             'path' => 279
+        ),
+        array(
+            'name' => 'Спина',
+            'price' => 1278,
+            'path' => 266
+        ),
+        array(
+            'name' => 'Пальцы рук',
+            'price' => 148,
+            'path' => 201
+        ),
+        array(
+            'name' => 'Кисти рук+пальцы',
+            'price' => 198,
+            'path' => 227
+        ),
+        array(
+            'name' => 'Предплечья',
+            'price' => 498,
+            'path' => 214
+        ),
+        array(
+            'name' => 'Декольте',
+            'price' => 248,
+            'path' => 522
+        ),
+        array(
+            'name' => 'Ореол молочных желез',
+            'price' => 198,
+            'path' => 463
+        ),
+        array(
+            'name' => 'Грудь',
+            'price' => 468,
+            'path' => 335
+        ),
+        array(
+            'name' => 'Плечи',
+            'price' => 478,
+            'path' => 162
+        ),
+        array(
+            'name' => 'Белая линия живота',
+            'price' => 268,
+            'path' => 112
+        ),
+        array(
+            'name' => 'Живот',
+            'price' => 458,
+            'path' => 60
+        ),
+        array(
+            'name' => 'Бикини не глубокое',
+            'price' => 568,
+            'path' => 34
+        ),
+        array(
+            'name' => 'Крестцовая область',
+            'price' => 338,
+            'path' => 292
+        ),
+        array(
+            'name' => 'Пальцы ног',
+            'price' => 188,
+            'path' => 99
+        ),
+        array(
+            'name' => 'Голени',
+            'price' => 638,
+            'path' => 86
+        ),
+        array(
+            'name' => 'Колени',
+            'price' => 238,
+            'path' => 73
+        ),
+        array(
+            'name' => 'Бедра',
+            'price' => 878,
+            'path' => 21
+        ),
+        array(
+            'name' => 'Ягодицы',
+            'price' => 648,
+            'path' => 305
+        ),
+        array(
+            'name' => 'Межъягодичная складка',
+            'price' => 468,
+            'path' => 318
         )
     );
 
@@ -31,10 +121,7 @@
         }
         return $html;
     }
-
-
 ?>
-
 <!--============================================================================================================
     ============================================================|Wrapper-4|=========================================
     ===============================================================Зоны==============================================-->
@@ -59,233 +146,10 @@
                         </div>
                     </form>
                 </div>
-
                 <div class="wumen block-pol active-pol hide-mob">
                     <div class="part-box-const  active-cons" id="part-1-const">
                         <div class="col-xs-6">
                             <?php echo genPrice($womenBodyZones);?>
-
-                            <div class="price path266" data-target=" 429 грн" data-toggle="429 грн"
-                                 data-title="path266">
-                                <div class="left">
-                                    <p>Спина</p>
-                                </div>
-                                <span class="doted-line"></span>
-                                <div class="right">
-                                    <p>
-                                        <span class="skidon">1278 грн</span>
-                                        <span class="zacherk"> 639 грн</span>
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="price path201" data-target=" 429 грн" data-toggle="429 грн"
-                                 data-title="path201">
-                                <div class="left">
-                                    <p>Пальцы рук</p>
-                                </div>
-                                <span class="doted-line"></span>
-                                <div class="right">
-                                    <p>
-                                        <span class="skidon">148 грн</span>
-                                        <span class="zacherk"> 74 грн</span>
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="price path227" data-target=" 429 грн" data-toggle="429 грн"
-                                 data-title="path227">
-                                <div class="left">
-                                    <p>Кисти рук+пальцы</p>
-                                </div>
-                                <span class="doted-line"></span>
-                                <div class="right">
-                                    <p>
-                                        <span class="skidon">198 грн</span>
-                                        <span class="zacherk"> 99 грн</span>
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="price path214" data-target=" 429 грн" data-toggle="429 грн"
-                                 data-title="path214">
-                                <div class="left">
-                                    <p>Предплечья</p>
-                                </div>
-                                <span class="doted-line"></span>
-                                <div class="right">
-                                    <p>
-                                        <span class="skidon">498 грн</span>
-                                        <span class="zacherk"> 249 грн</span>
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="price path242" data-target=" 429 грн" data-toggle="429 грн"
-                                 data-title="path242">
-                                <div class="left">
-                                    <p>Подмышечные области</p>
-                                </div>
-                                <span class="doted-line"></span>
-                                <div class="right">
-                                    <p>
-                                        <span class="skidon">328 грн</span>
-                                        <span class="zacherk"> 164 грн</span>
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="price path522" data-target=" 429 грн" data-toggle="429 грн"
-                                 data-title="path522">
-                                <div class="left">
-                                    <p>Декольте</p>
-                                </div>
-                                <span class="doted-line"></span>
-                                <div class="right">
-                                    <p>
-                                        <span class="skidon">248 грн</span>
-                                        <span class="zacherk"> 124 грн</span>
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="price path463" data-target=" 429 грн" data-toggle="429 грн"
-                                 data-title="path463">
-                                <div class="left">
-                                    <p>Ореол молочных желез</p>
-                                </div>
-                                <span class="doted-line"></span>
-                                <div class="right">
-                                    <p>
-                                        <span class="skidon">198 грн</span>
-                                        <span class="zacherk"> 99 грн</span>
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="price path335" data-target=" 429 грн" data-toggle="429 грн"
-                                 data-title="path335">
-                                <div class="left">
-                                    <p>Грудь</p>
-                                </div>
-                                <span class="doted-line"></span>
-                                <div class="right">
-                                    <p>
-                                        <span class="skidon">468 грн</span>
-                                        <span class="zacherk"> 234 грн</span>
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="price path162" data-target=" 429 грн" data-toggle="429 грн"
-                                 data-title="path162">
-                                <div class="left">
-                                    <p>Плечи</p>
-                                </div>
-                                <span class="doted-line"></span>
-                                <div class="right">
-                                    <p>
-                                        <span class="skidon">478 грн</span>
-                                        <span class="zacherk"> 239 грн</span>
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="price path112" data-target=" 429 грн" data-toggle="429 грн"
-                                 data-title="path112">
-                                <div class="left">
-                                    <p>Белая линия живота</p>
-                                </div>
-                                <span class="doted-line"></span>
-                                <div class="right">
-                                    <p>
-                                        <span class="skidon">268 грн</span>
-                                        <span class="zacherk"> 134 грн</span>
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="price path60" data-target=" 429 грн" data-toggle="429 грн"
-                                 data-title="path60">
-                                <div class="left">
-                                    <p>Живот</p>
-                                </div>
-                                <span class="doted-line"></span>
-                                <div class="right">
-                                    <p>
-                                        <span class="skidon">458 грн</span>
-                                        <span class="zacherk"> 229 грн</span>
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="price path34" data-target=" 429 грн" data-toggle="429 грн"
-                                 data-title="path34">
-                                <div class="left">
-                                    <p>Бикини не глубокое</p>
-                                </div>
-                                <span class="doted-line"></span>
-                                <div class="right">
-                                    <p>
-                                        <span class="skidon">568 грн</span>
-                                        <span class="zacherk"> 284 грн</span>
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="price path292" data-target=" 429 грн" data-toggle="429 грн"
-                                 data-title="path292">
-                                <div class="left">
-                                    <p>Крестцовая область</p>
-                                </div>
-                                <span class="doted-line"></span>
-                                <div class="right">
-                                    <p>
-                                        <span class="skidon">338 грн</span>
-                                        <span class="zacherk"> 169 грн</span>
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="price path99" data-target=" 429 грн" data-toggle="429 грн"
-                                 data-title="path99">
-                                <div class="left">
-                                    <p>Пальцы ног</p>
-                                </div>
-                                <span class="doted-line"></span>
-                                <div class="right">
-                                    <p>
-                                        <span class="skidon">188 грн</span>
-                                        <span class="zacherk"> 94 грн</span>
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="price path86" data-target=" 429 грн" data-toggle="429 грн"
-                                 data-title="path86">
-                                <div class="left">
-                                    <p>Голени</p>
-                                </div>
-                                <span class="doted-line"></span>
-                                <div class="right">
-                                    <p>
-                                        <span class="skidon">638 грн</span>
-                                        <span class="zacherk"> 319 грн</span>
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="price path73" data-target=" 429 грн" data-toggle="429 грн"
-                                 data-title="path73">
-                                <div class="left">
-                                    <p>Колени</p>
-                                </div>
-                                <span class="doted-line"></span>
-                                <div class="right">
-                                    <p>
-                                        <span class="skidon">238 грн</span>
-                                        <span class="zacherk"> 119 грн</span>
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="price path21" data-target=" 429 грн" data-toggle="429 грн"
-                                 data-title="path21">
-                                <div class="left">
-                                    <p>Бедра</p>
-                                </div>
-                                <span class="doted-line"></span>
-                                <div class="right">
-                                    <p>
-                                        <span class="skidon">878 грн</span>
-                                        <span class="zacherk"> 439 грн</span>
-                                    </p>
-                                </div>
-                            </div>
                             <div class="price" data-target="" data-toggle="429 грн" data-title="">
                                 <div class="left">
                                     <p>Голени с коленями</p>
@@ -298,34 +162,7 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="price path305" data-target=" 429 грн" data-toggle="429 грн"
-                                 data-title="path305">
-                                <div class="left">
-                                    <p>Ягодицы</p>
-                                </div>
-                                <span class="doted-line"></span>
-                                <div class="right">
-                                    <p>
-                                        <span class="skidon">648 грн</span>
-                                        <span class="zacherk"> 324 грн</span>
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="price path318" data-target=" 429 грн" data-toggle="429 грн"
-                                 data-title="path318">
-                                <div class="left">
-                                    <p>Межъягодичная складка</p>
-                                </div>
-                                <span class="doted-line"></span>
-                                <div class="right">
-                                    <p>
-                                        <span class="skidon">468 грн</span>
-                                        <span class="zacherk"> 234 грн</span>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xs-6">
+                            <div class="col-xs-6">
                             <svg
                                 xmlns:dc="http://purl.org/dc/elements/1.1/"
                                 xmlns:cc="http://creativecommons.org/ns#"
@@ -2767,262 +2604,7 @@
                     </div>
                 </div> <!--/Man block which HIDDEN on mobile-->
                 <div class="col-xs-12 show-mob"> <!--Show only on mobile-->
-                    <div class="price path47" data-target=" 429 грн" data-toggle="429 грн"
-                         data-title="path47">
-                        <div class="left"><p>Бикини глубокое</p></div>
-                        <span class="doted-line"></span>
-                        <div class="right">
-                            <p>
-                                <span class="skidon">828 грн</span>
-                                <span class="zacherk"> 414 грн</span>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="price path48" data-target=" 429 грн" data-toggle="429 грн"
-                         data-title="path48">
-                        <div class="left"><p>Ноги полностью</p></div>
-                        <span class="doted-line"></span>
-                        <div class="right">
-                            <p>
-                                <span class="skidon">1448 грн</span>
-                                <span class="zacherk"> 724 грн</span>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="price path279" data-target=" 429 грн" data-toggle="429 грн"
-                         data-title="path279">
-                        <div class="left">
-                            <p>Верхняя часть спины+плечи</p>
-                        </div>
-                        <span class="doted-line"></span>
-                        <div class="right">
-                            <p>
-                                <span class="skidon">858 грн</span>
-                                <span class="zacherk"> 429 грн</span>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="price path266" data-target=" 429 грн" data-toggle="429 грн"
-                         data-title="path266">
-                        <div class="left">
-                            <p>Спина</p>
-                        </div>
-                        <span class="doted-line"></span>
-                        <div class="right">
-                            <p>
-                                <span class="skidon">1278 грн</span>
-                                <span class="zacherk"> 639 грн</span>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="price path201" data-target=" 429 грн" data-toggle="429 грн"
-                         data-title="path201">
-                        <div class="left">
-                            <p>Пальцы рук</p>
-                        </div>
-                        <span class="doted-line"></span>
-                        <div class="right">
-                            <p>
-                                <span class="skidon">148 грн</span>
-                                <span class="zacherk"> 74 грн</span>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="price path227" data-target=" 429 грн" data-toggle="429 грн"
-                         data-title="path227">
-                        <div class="left">
-                            <p>Кисти рук+пальцы</p>
-                        </div>
-                        <span class="doted-line"></span>
-                        <div class="right">
-                            <p>
-                                <span class="skidon">198 грн</span>
-                                <span class="zacherk"> 99 грн</span>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="price path214" data-target=" 429 грн" data-toggle="429 грн"
-                         data-title="path214">
-                        <div class="left">
-                            <p>Предплечья</p>
-                        </div>
-                        <span class="doted-line"></span>
-                        <div class="right">
-                            <p>
-                                <span class="skidon">498 грн</span>
-                                <span class="zacherk"> 249 грн</span>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="price path242" data-target=" 429 грн" data-toggle="429 грн"
-                         data-title="path242">
-                        <div class="left">
-                            <p>Подмышечные области</p>
-                        </div>
-                        <span class="doted-line"></span>
-                        <div class="right">
-                            <p>
-                                <span class="skidon">328 грн</span>
-                                <span class="zacherk"> 164 грн</span>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="price path522" data-target=" 429 грн" data-toggle="429 грн"
-                         data-title="path522">
-                        <div class="left">
-                            <p>Декольте</p>
-                        </div>
-                        <span class="doted-line"></span>
-                        <div class="right">
-                            <p>
-                                <span class="skidon">248 грн</span>
-                                <span class="zacherk"> 124 грн</span>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="price path463" data-target=" 429 грн" data-toggle="429 грн"
-                         data-title="path463">
-                        <div class="left">
-                            <p>Ореол молочных желез</p>
-                        </div>
-                        <span class="doted-line"></span>
-                        <div class="right">
-                            <p>
-                                <span class="skidon">198 грн</span>
-                                <span class="zacherk"> 99 грн</span>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="price path335" data-target=" 429 грн" data-toggle="429 грн"
-                         data-title="path335">
-                        <div class="left">
-                            <p>Грудь</p>
-                        </div>
-                        <span class="doted-line"></span>
-                        <div class="right">
-                            <p>
-                                <span class="skidon">468 грн</span>
-                                <span class="zacherk"> 234 грн</span>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="price path162" data-target=" 429 грн" data-toggle="429 грн"
-                         data-title="path162">
-                        <div class="left">
-                            <p>Плечи</p>
-                        </div>
-                        <span class="doted-line"></span>
-                        <div class="right">
-                            <p>
-                                <span class="skidon">478 грн</span>
-                                <span class="zacherk"> 239 грн</span>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="price path112" data-target=" 429 грн" data-toggle="429 грн"
-                         data-title="path112">
-                        <div class="left">
-                            <p>Белая линия живота</p>
-                        </div>
-                        <span class="doted-line"></span>
-                        <div class="right">
-                            <p>
-                                <span class="skidon">268 грн</span>
-                                <span class="zacherk"> 134 грн</span>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="price path60" data-target=" 429 грн" data-toggle="429 грн"
-                         data-title="path60">
-                        <div class="left">
-                            <p>Живот</p>
-                        </div>
-                        <span class="doted-line"></span>
-                        <div class="right">
-                            <p>
-                                <span class="skidon">458 грн</span>
-                                <span class="zacherk"> 229 грн</span>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="price path34" data-target=" 429 грн" data-toggle="429 грн"
-                         data-title="path34">
-                        <div class="left">
-                            <p>Бикини не глубокое</p>
-                        </div>
-                        <span class="doted-line"></span>
-                        <div class="right">
-                            <p>
-                                <span class="skidon">568 грн</span>
-                                <span class="zacherk"> 284 грн</span>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="price path292" data-target=" 429 грн" data-toggle="429 грн"
-                         data-title="path292">
-                        <div class="left">
-                            <p>Крестцовая область</p>
-                        </div>
-                        <span class="doted-line"></span>
-                        <div class="right">
-                            <p>
-                                <span class="skidon">338 грн</span>
-                                <span class="zacherk"> 169 грн</span>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="price path99" data-target=" 429 грн" data-toggle="429 грн"
-                         data-title="path99">
-                        <div class="left">
-                            <p>Пальцы ног</p>
-                        </div>
-                        <span class="doted-line"></span>
-                        <div class="right">
-                            <p>
-                                <span class="skidon">188 грн</span>
-                                <span class="zacherk"> 94 грн</span>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="price path86" data-target=" 429 грн" data-toggle="429 грн"
-                         data-title="path86">
-                        <div class="left">
-                            <p>Голени</p>
-                        </div>
-                        <span class="doted-line"></span>
-                        <div class="right">
-                            <p>
-                                <span class="skidon">638 грн</span>
-                                <span class="zacherk"> 319 грн</span>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="price path73" data-target=" 429 грн" data-toggle="429 грн"
-                         data-title="path73">
-                        <div class="left">
-                            <p>Колени</p>
-                        </div>
-                        <span class="doted-line"></span>
-                        <div class="right">
-                            <p>
-                                <span class="skidon">238 грн</span>
-                                <span class="zacherk"> 119 грн</span>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="price path21" data-target=" 429 грн" data-toggle="429 грн"
-                         data-title="path21">
-                        <div class="left">
-                            <p>Бедра</p>
-                        </div>
-                        <span class="doted-line"></span>
-                        <div class="right">
-                            <p>
-                                <span class="skidon">878 грн</span>
-                                <span class="zacherk"> 439 грн</span>
-                            </p>
-                        </div>
-                    </div>
+                    <?php echo genPrice($womenBodyZones);?>
                     <div class="price" data-target="" data-toggle="429 грн" data-title="">
                         <div class="left">
                             <p>Голени с коленями</p>
@@ -3032,32 +2614,6 @@
                             <p>
                                 <span class="skidon">738 грн</span>
                                 <span class="zacherk"> 369 грн</span>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="price path305" data-target=" 429 грн" data-toggle="429 грн"
-                         data-title="path305">
-                        <div class="left">
-                            <p>Ягодицы</p>
-                        </div>
-                        <span class="doted-line"></span>
-                        <div class="right">
-                            <p>
-                                <span class="skidon">648 грн</span>
-                                <span class="zacherk"> 324 грн</span>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="price path318" data-target=" 429 грн" data-toggle="429 грн"
-                         data-title="path318">
-                        <div class="left">
-                            <p>Межъягодичная складка</p>
-                        </div>
-                        <span class="doted-line"></span>
-                        <div class="right">
-                            <p>
-                                <span class="skidon">468 грн</span>
-                                <span class="zacherk"> 234 грн</span>
                             </p>
                         </div>
                     </div>
