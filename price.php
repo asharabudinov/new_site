@@ -350,7 +350,7 @@ $womenBodyZones = array(
 
                             <?php echo genPrice($womenBodyZones);?>
 
-                            <div class="price path777" data-target="" data-toggle="429 грн" data-title="path21,path73,path86">
+                            <div class="price path777" data-target="" data-toggle="429 грн" data-title="path777,path21,path73,path86">
                                 <div class="left">
                                     <p>Ноги полностью</p>
                                 </div>
@@ -362,7 +362,7 @@ $womenBodyZones = array(
                                     </p>
                                 </div>
                             </div>
-                            <div class="price path778" data-target="" data-toggle="429 грн" data-title="path73,path86">
+                            <div class="price path778" data-target="" data-toggle="429 грн" data-title="path778,path73,path86">
                                 <div class="left">
                                     <p>Голени с коленями</p>
                                 </div>
