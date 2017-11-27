@@ -200,7 +200,7 @@ $(document).ready(function() {
             arr.forEach(function (item, i , arr) {
                 $("#"+item).addClass("hovers");
             });
-            $("hr."+item).css({'opacity':'1'});
+            $("hr."+arr[0]).css({'opacity':'1'});
             $("div."+item).css({'background':'#F9FDFF','border':'3px solid #fdb02a'});
             $("div."+arr[0]+" p").css({'background':'#F9FDFF','color':'#282828','font-size':'13px'});
             $("div."+arr[0]+" .doted-line").css({'opacity':'0'});
@@ -222,7 +222,7 @@ $(document).ready(function() {
             arr.forEach(function (item, i , arr) {
                 $("#"+item).removeClass("hovers");
             });
-            $("hr."+item).css({'opacity':'0'});
+            $("hr."+arr[0]).css({'opacity':'0'});
             $("div."+item).css({'background':'#F9FDFF','border':'3px solid #F9FDFF'});
             $("div."+arr[0]+" p").css({'background':'#F9FDFF','color':'#282828', 'font-size':'13px'});
             $("div."+arr[0]+" div.right p .skidon").css({'text-decoration':'line-through'});
