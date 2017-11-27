@@ -202,7 +202,7 @@ $(document).ready(function() {
             });
             $("hr."+item).css({'opacity':'1'});
             $("div."+item).css({'background':'#F9FDFF','border':'3px solid #fdb02a'});
-            $("div."+item+" p").css({'background':'#F9FDFF','color':'#282828','font-size':'13px'});
+            $("div."+arr[0]+" p").css({'background':'#F9FDFF','color':'#282828','font-size':'13px'});
             $("div."+arr[0]+" .doted-line").css({'opacity':'0'});
             $("div."+arr[0]+" div.right p .skidon").css({'text-decoration':'line-through'});
 
@@ -224,7 +224,7 @@ $(document).ready(function() {
             });
             $("hr."+item).css({'opacity':'0'});
             $("div."+item).css({'background':'#F9FDFF','border':'3px solid #F9FDFF'});
-            $("div."+item+" p").css({'background':'#F9FDFF','color':'#282828', 'font-size':'13px'});
+            $("div."+arr[0]+" p").css({'background':'#F9FDFF','color':'#282828', 'font-size':'13px'});
             $("div."+arr[0]+" div.right p .skidon").css({'text-decoration':'line-through'});
             $("div."+arr[0]+" .doted-line").css({'opacity':'1'});
 
