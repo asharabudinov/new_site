@@ -350,7 +350,19 @@ $womenBodyZones = array(
 
                             <?php echo genPrice($womenBodyZones);?>
 
-                            <div class="price" data-target="" data-toggle="429 грн" data-title="">
+                            <div class="price path777" data-target="" data-toggle="429 грн" data-title="path777">
+                                <div class="left">
+                                    <p>Ноги полностью</p>
+                                </div>
+                                <span class="doted-line"></span>
+                                <div class="right">
+                                    <p>
+                                        <span class="skidon">1448 грн</span>
+                                        <span class="zacherk"> 869 грн</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="price path778" data-target="" data-toggle="429 грн" data-title="path778">
                                 <div class="left">
                                     <p>Голени с коленями</p>
                                 </div>
@@ -358,7 +370,7 @@ $womenBodyZones = array(
                                 <div class="right">
                                     <p>
                                         <span class="skidon">738 грн</span>
-                                        <span class="zacherk"> 369 грн</span>
+                                        <span class="zacherk"> 443 грн</span>
                                     </p>
                                 </div>
                             </div>
@@ -2305,7 +2317,19 @@ $womenBodyZones = array(
                 </div> <!--/Man block which HIDDEN on mobile-->
                 <div class="col-xs-12 show-mob"> <!--Show only on mobile-->
                     <?php echo genPrice($womenBodyZones);?>
-                    <div class="price" data-target="" data-toggle="429 грн" data-title="">
+                    <div class="price path777" data-target="" data-toggle="429 грн" data-title="path777">
+                        <div class="left">
+                            <p>Ноги полностью</p>
+                        </div>
+                        <span class="doted-line"></span>
+                        <div class="right">
+                            <p>
+                                <span class="skidon">1448 грн</span>
+                                <span class="zacherk"> 869 грн</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="price path778" data-target="" data-toggle="429 грн" data-title="path778">
                         <div class="left">
                             <p>Голени с коленями</p>
                         </div>
@@ -2313,7 +2337,7 @@ $womenBodyZones = array(
                         <div class="right">
                             <p>
                                 <span class="skidon">738 грн</span>
-                                <span class="zacherk"> 369 грн</span>
+                                <span class="zacherk"> 443 грн</span>
                             </p>
                         </div>
                     </div>
