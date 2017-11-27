@@ -50,7 +50,7 @@ $(document).ready(function() {
                 $('.nav-lend-loc').css({'top':'-50px', 'z-index':'-1', 'transition':'.5s'});
             }
        });
-    
+
     /*===========================================================================================================
      ===========================================================|Phone hover|====================================
      ==========================================================================================================*/
@@ -196,6 +196,16 @@ $(document).ready(function() {
     $(".price").hover(
         function () {
             var dti_p = $(this).attr("data-title");
+            var dti_array = dti_p.split(",");
+            dti_array.forEach(function (item, i , dti_array) {
+                $("hr."+item).css({'opacity':'1'});
+                $("div."+item).css({'background':'#F9FDFF','border':'3px solid #fdb02a'});
+                $("div."+item+" p").css({'background':'#F9FDFF','color':'#282828','font-size':'13px'});
+                $("div."+item+" div.right p .skidon").css({'text-decoration':'line-through'});
+                $("div."+item+" .doted-line").css({'opacity':'0'});
+                $("#"+item).addClass("hovers");
+            });
+/*
             var dt_target = $("div."+dti_p).attr("data-target");
             var dt_toggle = $("div."+dti_p).attr("data-toggle");
             $("hr."+dti_p).css({'opacity':'1'});
@@ -204,16 +214,25 @@ $(document).ready(function() {
             $("div."+dti_p+" div.right p .skidon").css({'text-decoration':'line-through'});
             //$("div."+dti_p+" div.right p .zacherk").text(dt_target);
             $("div."+dti_p+" .doted-line").css({'opacity':'0'});
-            $("#"+dti_p).addClass("hovers");
+            $("#"+dti_p).addClass("hovers");*/
         }, function () {
             var dti_p = $(this).attr("data-title");
-            $("hr."+dti_p).css({'opacity':'0'});
+            var dti_array = dti_p.split(",");
+            dti_array.forEach(function (item, i , dti_array) {
+                $("hr."+item).css({'opacity':'0'});
+                $("div."+item).css({'background':'#F9FDFF','border':'3px solid #F9FDFF'});
+                $("div."+item+" p").css({'background':'#F9FDFF','color':'#282828', 'font-size':'13px'});
+                $("div."+item+" div.right p .skidon").css({'text-decoration':'line-through'});
+                $("div."+item+" .doted-line").css({'opacity':'1'});
+                $("#"+item).removeClass("hovers");
+            });
+           /* $("hr."+dti_p).css({'opacity':'0'});
             $("div."+dti_p).css({'background':'#F9FDFF','border':'3px solid #F9FDFF'});
             $("div."+dti_p+" p").css({'background':'#F9FDFF','color':'#282828', 'font-size':'13px'});
             $("div."+dti_p+" div.right p .skidon").css({'text-decoration':'line-through'});
             //$("div."+dti_p+" div.right p .zacherk").text(" ");
             $("div."+dti_p+" .doted-line").css({'opacity':'1'});
-            $("#"+dti_p).removeClass("hovers");
+            $("#"+dti_p).removeClass("hovers");*/
         });
         pol = $('.lb').attr("data-target");
         chasti =  $('.lb_').attr("data-target");
@@ -316,8 +335,8 @@ $(document).ready(function() {
 
 	};
 	window.initCallBackForm();
-	
-	
+
+
 	window.initCallBackForm2 = function() {
 		var $form = $('.js_orderCallForm2');
 		$form.submit(function() {
@@ -354,7 +373,7 @@ $(document).ready(function() {
 
 	};
 	window.initCallBackForm2();
-	
+
 
 	function showSlides(n) {
         var i;
