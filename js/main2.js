@@ -205,17 +205,6 @@ $(document).ready(function() {
             $("div."+arr[0]+" p").css({'background':'#F9FDFF','color':'#282828','font-size':'13px'});
             $("div."+arr[0]+" .doted-line").css({'opacity':'0'});
             $("div."+arr[0]+" div.right p .skidon").css({'text-decoration':'line-through'});
-
-            /*
-                        var dt_target = $("div."+dti_p).attr("data-target");
-                        var dt_toggle = $("div."+dti_p).attr("data-toggle");
-                        $("hr."+dti_p).css({'opacity':'1'});
-                        $("div."+dti_p).css({'background':'#F9FDFF','border':'3px solid #fdb02a'});
-                        $("div."+dti_p+" p").css({'background':'#F9FDFF','color':'#282828','font-size':'13px'});
-                        $("div."+dti_p+" div.right p .skidon").css({'text-decoration':'line-through'});
-                        //$("div."+dti_p+" div.right p .zacherk").text(dt_target);
-                        $("div."+dti_p+" .doted-line").css({'opacity':'0'});
-                        $("#"+dti_p).addClass("hovers");*/
         }, function () {
             var dti_p = $(this).attr("data-title");
             var arr = dti_p.split(",");
@@ -227,14 +216,6 @@ $(document).ready(function() {
             $("div."+arr[0]+" p").css({'background':'#F9FDFF','color':'#282828', 'font-size':'13px'});
             $("div."+arr[0]+" div.right p .skidon").css({'text-decoration':'line-through'});
             $("div."+arr[0]+" .doted-line").css({'opacity':'1'});
-
-            /* $("hr."+dti_p).css({'opacity':'0'});
-             $("div."+dti_p).css({'background':'#F9FDFF','border':'3px solid #F9FDFF'});
-             $("div."+dti_p+" p").css({'background':'#F9FDFF','color':'#282828', 'font-size':'13px'});
-             $("div."+dti_p+" div.right p .skidon").css({'text-decoration':'line-through'});
-             //$("div."+dti_p+" div.right p .zacherk").text(" ");
-             $("div."+dti_p+" .doted-line").css({'opacity':'1'});
-             $("#"+dti_p).removeClass("hovers");*/
         });
         pol = $('.lb').attr("data-target");
         chasti =  $('.lb_').attr("data-target");
