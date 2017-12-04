@@ -82,11 +82,18 @@
                 </div>
                 <div class="content-header">
                     <div class="col-xs-12 col-md-8">
-                        <h3><span class="wr-zag-b wr-zag-b-left">Лазерная эпиляция</span></h3>
-                        <p>
-                            Лазерная эпиляция – процедура, которая Вам подходит, если Вы давно мечтали об избавлении волос в определённых зонах навсегда!
-                        </p>
-                        <button type="button" class="link-popup" data-toggle="modal" data-target=".js_modal_form-3" onclick="javascript: return false;" data-title="Лазерная эпиляция">Записаться на приём</button>
+						<? if($pageType === 'indexPage') : ?>
+							<h1>Студия лазерной косметологии</h1>
+						<? endif ?>
+						<? if($pageType === 'lazernayaEpilyacia') : ?>
+							<h3><span class="wr-zag-b wr-zag-b-left">Лазерная эпиляция</span></h3>
+							<p>Лазерная эпиляция – процедура, которая Вам подходит, если Вы давно мечтали об избавлении волос в определённых зонах навсегда!</p>
+						<? endif ?>
+						<? if($pageType === 'permanentnyiMakiyag') : ?>
+							<h3><span class="wr-zag-b wr-zag-b-left">перманентный макияж</span></h3>
+							<p>Перманентный макияж – это не татуировка и не рисунок на теле, это долгосрочный макияж, который позволит вам выглядеть красиво всегда. Естественность – главная черта нашей работы.</p>
+						<? endif ?>
+						<button type="button" class="link-popup" data-toggle="modal" data-target=".js_modal_form-3" onclick="javascript: return false;" data-title="Записаться на прием">Записаться на приём</button>
                         <div class="soc-block show-mob">
                             <a href="https://vk.com/silkepil_vn" class="soc-icon" target="_blank">
                                 <div class="fa fa-vk"></div>

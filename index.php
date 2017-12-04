@@ -9,6 +9,7 @@ if (strpos($uri, 'callbackhandle.php') !== false) {
 if (!(strpos($uri, 'callback') !== false || strpos($uri, 'item/edit') !== false)) {
 
     if (strpos($uri, 'lazernaya')) {
+		$pageType = 'lazernayaEpilyacia';
         require_once("lazernaya-epilyasia.html");
         return;
     } elseif (strpos($uri, 'test.html') !== false) {
@@ -21,12 +22,14 @@ if (!(strpos($uri, 'callback') !== false || strpos($uri, 'item/edit') !== false)
         require_once("payjs.php");
         return;
     } elseif (strpos($uri, 'index.html') !== false) {
+		$pageType = 'indexPage';
         require_once("index.html");
         return;
     } elseif (strpos($uri, 'promo-body') !== false) {
         require_once("promo-body.html");
         return;
     } elseif (strpos($uri, 'permanentnyi-makiyag.html')) {
+		$pageType = 'permanentnyiMakiyag';
         require_once("permanentnyi-makiyag.html");
         return;
     } elseif (strpos($uri, '?') === 1 || strpos($uri, 'index.html') !== false || strpos($uri, '') === 0 || strpos($uri, '/') === 0 || strpos($uri, 'v2') === 0) {
