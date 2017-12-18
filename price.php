@@ -103,203 +103,203 @@ $womenBodyZones = array(
     )
 );
 
-	$womenFaceZones = array(
-        array(
-            'name' => 'Линия лба',
-            'price' => 228,
-            'path' => 283
-        ),
-        array(
-            'name' => 'Верхняя губа',
-            'price' => 178,
-            'path' => 444
-        ),
-        array(
-            'name' => 'Виски',
-            'price' => 198,
-            'path' => 358
-        ),
-        array(
-            'name' => 'Ушки',
-            'price' => 198,
-            'path' => 304
-        ),
-        array(
-            'name' => 'Щечки',
-            'price' => 238,
-            'path' => 268
-        ),
-        array(
-            'name' => 'Межбровье',
-            'price' => 188,
-            'path' => 319
-        ),
-        array(
-            'name' => 'Брови',
-            'price' => 189,
-            'path' => 381
-        ),
-        array(
-            'name' => 'Подбородок',
-            'price' => 228,
-            'path' => 398
-        ),
-        array(
-            'name' => 'Шея',
-            'price' => 298,
-            'path' => 417
-        )
-    );
+$womenFaceZones = array(
+    array(
+        'name' => 'Линия лба',
+        'price' => 228,
+        'path' => 283
+    ),
+    array(
+        'name' => 'Верхняя губа',
+        'price' => 178,
+        'path' => 444
+    ),
+    array(
+        'name' => 'Виски',
+        'price' => 198,
+        'path' => 358
+    ),
+    array(
+        'name' => 'Ушки',
+        'price' => 198,
+        'path' => 304
+    ),
+    array(
+        'name' => 'Щечки',
+        'price' => 238,
+        'path' => 268
+    ),
+    array(
+        'name' => 'Межбровье',
+        'price' => 188,
+        'path' => 319
+    ),
+    array(
+        'name' => 'Брови',
+        'price' => 189,
+        'path' => 381
+    ),
+    array(
+        'name' => 'Подбородок',
+        'price' => 228,
+        'path' => 398
+    ),
+    array(
+        'name' => 'Шея',
+        'price' => 298,
+        'path' => 417
+    )
+);
 
-	$menBodyZones = array(
-        array(
-            'name' => 'Бикини глубокое',
-            'price' => 968,
-            'path' => 75
-        ),
-        array(
-            'name' => 'Спина',
-            'price' => 1278,
-            'path' => 370
-        ),
-        array(
-            'name' => 'Пальци рук',
-            'price' => 378,
-            'path' => 126
-        ),
-        array(
-            'name' => 'Кисти рук + пальцы',
-            'price' => 378,
-            'path' => 309
-        ),
-        array(
-            'name' => 'Предплечья',
-            'price' => 688,
-            'path' => 234
-        ),
-        array(
-            'name' => 'Подмышки',
-            'price' => 398,
-            'path' => 169
-        ),
-        array(
-            'name' => 'Декольте',
-            'price' => 378,
-            'path' => 121
-        ),
-        array(
-            'name' => 'Ореол молочных желез',
-            'price' => 198,
-            'path' => 357
-        ),
-        array(
-            'name' => 'Грудь',
-            'price' => 598,
-            'path' => 190
-        ),
-        array(
-            'name' => 'Плечи',
-            'price' => 478,
-            'path' => 142
-        ),
-        array(
-            'name' => 'Белая линия живота',
-            'price' => 268,
-            'path' => 215
-        ),
-        array(
-            'name' => 'Живот',
-            'price' => 888,
-            'path' => 98
-        ),
-        array(
-            'name' => 'Бикини не глубокое',
-            'price' => 568,
-            'path' => 50
-        ),
-        array(
-            'name' => 'Крестцовая область',
-            'price' => 338,
-            'path' => 395
-        ),
-        array(
-            'name' => 'Пальци ног',
-            'price' => 188,
-            'path' => 326
-        ),
-        array(
-            'name' => 'Голени',
-            'price' => 888,
-            'path' => 282
-        ),
-        array(
-            'name' => 'Колени',
-            'price' => 238,
-            'path' => 257
-        ),
-        array(
-            'name' => 'Бедра',
-            'price' => 878,
-            'path' => 23
-        ),
-        array(
-            'name' => 'Ягодицы',
-            'price' => 648,
-            'path' => 431
-        ),
-        array(
-            'name' => 'Межъягодичная складка',
-            'price' => 468,
-            'path' => 414
-        )
-    );
+$menBodyZones = array(
+    array(
+        'name' => 'Бикини глубокое',
+        'price' => 968,
+        'path' => 75
+    ),
+    array(
+        'name' => 'Спина',
+        'price' => 1278,
+        'path' => 370
+    ),
+    array(
+        'name' => 'Пальци рук',
+        'price' => 378,
+        'path' => 126
+    ),
+    array(
+        'name' => 'Кисти рук + пальцы',
+        'price' => 378,
+        'path' => 309
+    ),
+    array(
+        'name' => 'Предплечья',
+        'price' => 688,
+        'path' => 234
+    ),
+    array(
+        'name' => 'Подмышки',
+        'price' => 398,
+        'path' => 169
+    ),
+    array(
+        'name' => 'Декольте',
+        'price' => 378,
+        'path' => 121
+    ),
+    array(
+        'name' => 'Ореол молочных желез',
+        'price' => 198,
+        'path' => 357
+    ),
+    array(
+        'name' => 'Грудь',
+        'price' => 598,
+        'path' => 190
+    ),
+    array(
+        'name' => 'Плечи',
+        'price' => 478,
+        'path' => 142
+    ),
+    array(
+        'name' => 'Белая линия живота',
+        'price' => 268,
+        'path' => 215
+    ),
+    array(
+        'name' => 'Живот',
+        'price' => 888,
+        'path' => 98
+    ),
+    array(
+        'name' => 'Бикини не глубокое',
+        'price' => 568,
+        'path' => 50
+    ),
+    array(
+        'name' => 'Крестцовая область',
+        'price' => 338,
+        'path' => 395
+    ),
+    array(
+        'name' => 'Пальци ног',
+        'price' => 188,
+        'path' => 326
+    ),
+    array(
+        'name' => 'Голени',
+        'price' => 888,
+        'path' => 282
+    ),
+    array(
+        'name' => 'Колени',
+        'price' => 238,
+        'path' => 257
+    ),
+    array(
+        'name' => 'Бедра',
+        'price' => 878,
+        'path' => 23
+    ),
+    array(
+        'name' => 'Ягодицы',
+        'price' => 648,
+        'path' => 431
+    ),
+    array(
+        'name' => 'Межъягодичная складка',
+        'price' => 468,
+        'path' => 414
+    )
+);
 
-	$menFaceZones = array(
-        array(
-            'name' => 'Линия лба',
-            'price' => 228,
-            'path' => 1311
-        ),
-        array(
-            'name' => 'Виски',
-            'price' => 269,
-            'path' => 198
-        ),
-        array(
-            'name' => 'Уши',
-            'price' => 198,
-            'path' => 1323
-        ),
-        array(
-            'name' => 'Щеки',
-            'price' => 238,
-            'path' => 1279
-        ),
-        array(
-            'name' => 'Межбровье',
-            'price' => 188,
-            'path' => 1291
-        ),
-        array(
-            'name' => 'Брови',
-            'price' => 189,
-            'path' => 1301
-        ),
-        array(
-            'name' => 'Подбородок',
-            'price' => 328,
-            'path' => 1255
-        ),
-        array(
-            'name' => 'Шея',
-            'price' => 298,
-            'path' => 1331
-        )
-    );
+$menFaceZones = array(
+    array(
+        'name' => 'Линия лба',
+        'price' => 228,
+        'path' => 1311
+    ),
+    array(
+        'name' => 'Виски',
+        'price' => 269,
+        'path' => 198
+    ),
+    array(
+        'name' => 'Уши',
+        'price' => 198,
+        'path' => 1323
+    ),
+    array(
+        'name' => 'Щеки',
+        'price' => 238,
+        'path' => 1279
+    ),
+    array(
+        'name' => 'Межбровье',
+        'price' => 188,
+        'path' => 1291
+    ),
+    array(
+        'name' => 'Брови',
+        'price' => 189,
+        'path' => 1301
+    ),
+    array(
+        'name' => 'Подбородок',
+        'price' => 328,
+        'path' => 1255
+    ),
+    array(
+        'name' => 'Шея',
+        'price' => 298,
+        'path' => 1331
+    )
+);
 
     function genPrice($data) {
         $html = '';
-        $k = 0.6;
+        $k = 0.7;
         foreach ($data as $item) {
             $html .= '<div class="price path'.$item['path'].'" data-target=" '.$item['price'].' грн" data-toggle="'.$item['price'].' грн"
                                  data-title="path'.$item['path'].'">
